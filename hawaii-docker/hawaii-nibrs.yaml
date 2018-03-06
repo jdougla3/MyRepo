@@ -1,0 +1,35 @@
+# Docker Compose file that brings up containers necessary for Hawaii nibrs environment
+# To run:  docker-compose -f hawaii-nibrs.yaml up -d
+# Prior to running, be sure to update the .env file (in this directory) with Github token and username
+version: '3'
+
+networks:
+  hawaii_nibrs_nw:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      -
+       subnet: 172.16.0.0/16
+
+services:
+
+  hawaii-nibrs-httpd-proxy:
+    container_name: hawaii-nibrs-httpd-proxy
+    image: ojbc/hawaii-nibrs-httpd-proxy
+    networks:
+      hawaii_nibrs_nw:    
+    build:
+      context: ./hawaii-nibrs-httpd-proxy
+        # we need this volume since this SSL cert and key must be on the docker host file system
+    ports: 
+      - "443:443"
+    volumes:
+       - "${HOST_CERT_PATH:-/opt/certs/}:/opt/certs/"
+ #
+  ojb-web-util:
+   container_name: ojb-web-util
+   image: ojbc/ojb-web-util
+   networks:
+     hawaii_nibrs_nw:
+
