@@ -25,7 +25,7 @@ services:
     ports: 
       - "443:443"
     volumes:
-       - "${HOST_CERT_PATH:-/opt/certs/}:/opt/certs/"
+       - "${HOST_CERT_PATH:-/opt/gfipm-certs/}:/opt/gfipm-certs/"
  #
   ojb-web-util:
    container_name: ojb-web-util
