@@ -23,7 +23,7 @@ MAINTAINER Open Justice Broker Consortium "http://www.ojbc.org"
 
 WORKDIR /tmp
 
-#RUN sed -i "s/ServerName localhost:9443/ServerName gfipm.search.org:9443/g" /etc/apache2/httpd.conf 
+#RUN sed -i "s/ServerName portal.ojbc.local:80/ServerName hawaii.nibrs.search.org:80/g" /etc/apache2/httpd.conf 
 EXPOSE 443	
 # Copy config files over
 	
