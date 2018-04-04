@@ -16,18 +16,14 @@
 # 
 
 
-FROM ojbc/portal
+FROM ojbc/idp
 
 MAINTAINER Open Justice Broker Consortium "http://www.ojbc.org"
 
 
 WORKDIR /tmp
 
-#RUN sed -i "s/ServerName portal.ojbc.local:80/ServerName gfipm.search.org:80/g" /etc/apache2/httpd.conf	
-# Copy config files over
-	
-COPY files/shibboleth2.xml /opt/shibboleth-sp/etc/shibboleth/
-COPY files/ssl.conf /etc/apache2/conf.d/
-COPY files/proxy.conf /etc/apache2/conf.d/
-COPY files/shib.conf /etc/apache2/conf.d/
-COPY files/CTF.xml /opt/files/CTF.xml
+COPY files/idp-signing.* /opt/shibboleth-idp/credentials/
+COPY files/idp-metadata.xml /opt/shibboleth-idp/metadata/idp-metadata.xml
+COPY files/idp.properties /opt/shibboleth-idp/conf/idp.properties
+COPY files/metadata-providers.xml /opt/shibboleth-idp/conf/metadata-providers.xml

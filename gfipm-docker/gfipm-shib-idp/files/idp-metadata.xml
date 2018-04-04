@@ -10,7 +10,7 @@
     <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0">
 
         <Extensions>
-            <shibmd:Scope regexp="false">GFIPM.local</shibmd:Scope>
+            <shibmd:Scope regexp="false">ojbc.local</shibmd:Scope>
 <!--
     Fill in the details for your IdP here 
 
@@ -122,7 +122,7 @@ Z3Ns9Au8inbRxjNW+DYzUwE4tdD6eQG6RpDb7nsScD72PHSAuQO1kc6JXpjW68So
     <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol">
 
         <Extensions>
-            <shibmd:Scope regexp="false">GFIPM.local</shibmd:Scope>
+            <shibmd:Scope regexp="false">ojbc.local</shibmd:Scope>
         </Extensions>
 
         <KeyDescriptor use="signing">
