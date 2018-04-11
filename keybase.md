@@ -1,3 +1,14 @@
+### Keybase proof
+
+I hereby claim:
+
+  * I am jdougla3 on github.
+  * I am jdougla3 (https://keybase.io/jdougla3) on keybase.
+  * I have a public key ASAr2ceO7xVX6D3I0e60YL9oO7DoXDKbYWF-KARa6BNSbgo
+
+To claim this, I am signing this object:
+
+```json
 {
   "body": {
     "key": {
@@ -53,3 +64,4 @@ Consider the [keybase command line program](https://keybase.io/download).
 ```bash
 # look me up
 keybase id jdougla3
+```
