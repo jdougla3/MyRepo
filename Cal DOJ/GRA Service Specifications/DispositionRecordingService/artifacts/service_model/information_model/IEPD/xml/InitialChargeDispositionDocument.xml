@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<icdd:InitialChargeDispositionDocument xmlns:cdd-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/"
+	xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.0/"
+	xmlns:em="http://release.niem.gov/niem/domains/emergencyManagement/4.0/" xmlns:icdd="https://isb.srv.courts-tc.ca.gov/CADRIP/InitialChargeDispositionDocument"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://isb.srv.courts-tc.ca.gov/CADRIP/InitialChargeDispositionDocument ../xsd/exchange/InitialChargeDispositionDocument.xsd">
+	<cdd-ext:StepOne>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>34000001</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>001</cdd-ext:EventSequenceNumber>
+		<cdd-ext:DispositionSubject>
+			<nc:PersonAgeMeasure xsi:nil="true" />
+			<nc:PersonBirthDate>
+				<nc:Date>1214-08-16</nc:Date>
+			</nc:PersonBirthDate>
+			<nc:PersonEyeColorText>XXX</nc:PersonEyeColorText>
+			<nc:PersonHairColorText>XXX</nc:PersonHairColorText>
+			<nc:PersonHeightMeasure>
+				<nc:MeasureValueText>000</nc:MeasureValueText>
+			</nc:PersonHeightMeasure>
+			<nc:PersonName>
+				<nc:PersonFullName>BEAR,MINNIE MOON</nc:PersonFullName>
+			</nc:PersonName>
+			<nc:PersonOtherIdentification xsi:nil="true" />
+			<nc:PersonRaceText>W</nc:PersonRaceText>
+			<nc:PersonSexText>M</nc:PersonSexText>
+			<nc:PersonSSNIdentification xsi:nil="true" />
+			<nc:PersonWeightMeasure>
+				<nc:MeasureValueText>000</nc:MeasureValueText>
+			</nc:PersonWeightMeasure>
+			<em:PersonAlternateName>BEARE</em:PersonAlternateName>
+			<j:PersonAugmentation>
+				<!-- j:DriverLicense xsi:nil="true" / -->
+				<j:DriverLicense>
+					<j:DriverLicenseIdentification>
+						<nc:IdentificationID>DL4567567</nc:IdentificationID>
+					</j:DriverLicenseIdentification>
+				</j:DriverLicense>
+				<j:PersonFBIIdentification xsi:nil="true" />
+			</j:PersonAugmentation>
+		</cdd-ext:DispositionSubject>
+		<cdd-ext:ArrestDate>
+			<nc:Date>2001-04-15</nc:Date>
+		</cdd-ext:ArrestDate>
+		<j:ArrestAgency>
+			<nc:OrganizationName>340000</nc:OrganizationName>
+			<nc:OrganizationOtherIdentification xsi:nil="true" />
+		</j:ArrestAgency>
+		<j:ArrestAgencyRecordIdentification>
+			<nc:IdentificationID>MURDER THIRTEEN</nc:IdentificationID>
+		</j:ArrestAgencyRecordIdentification>
+		<j:BookingAgency xsi:nil="true" />
+		<j:BookingAgencyRecordIdentification xsi:nil="true" />
+	</cdd-ext:StepOne>
+	<cdd-ext:StepTwo>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>34000001</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>002</cdd-ext:EventSequenceNumber>
+		<cdd-ext:DispositionEventCodeText>A</cdd-ext:DispositionEventCodeText>
+		<j:ChargeCountQuantity xsi:nil="true" />
+		<j:StatuteCodeIdentification>
+			<nc:IdentificationID>PC</nc:IdentificationID>
+		</j:StatuteCodeIdentification>
+		<j:StatuteCodeSectionIdentification>
+			<nc:IdentificationID>459</nc:IdentificationID>
+		</j:StatuteCodeSectionIdentification>
+		<j:StatuteDescriptionText xsi:nil="true" />
+		<j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+		<j:StatuteLevelText xsi:nil="true" />
+		<nc:ReleaseRecipient xsi:nil="true" />
+		<cdd-ext:OriginalCourt>
+			<nc:OrganizationName xsi:nil="true" />
+			<nc:OrganizationOtherIdentification xsi:nil="true" />
+			<nc:CaseDocketID xsi:nil="true" />
+		</cdd-ext:OriginalCourt>
+	</cdd-ext:StepTwo>
+	<cdd-ext:StepFour>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>34000001</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>003</cdd-ext:EventSequenceNumber>
+		<cdd-ext:CourtFilingDate>
+			<nc:Date>2001-05-05</nc:Date>
+		</cdd-ext:CourtFilingDate>
+		<cdd-ext:JudicialDistrictNumber>34100</cdd-ext:JudicialDistrictNumber>
+		<nc:CaseDocketID>THIRTEEN MURDER DSP</nc:CaseDocketID>
+		<j:PleaDescriptionText xsi:nil="true" />
+		<j:ChargeCountQuantity xsi:nil="true" />
+		<j:StatuteCodeIdentification>
+			<nc:IdentificationID>PC</nc:IdentificationID>
+		</j:StatuteCodeIdentification>
+		<j:StatuteCodeSectionIdentification>
+			<nc:IdentificationID>459</nc:IdentificationID>
+		</j:StatuteCodeSectionIdentification>
+		<j:StatuteDescriptionText xsi:nil="true" />
+		<j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+		<cdd-ext:CourtDisposedChargeType>F</cdd-ext:CourtDisposedChargeType>
+		<j:StatuteLevelText xsi:nil="true" />
+		<cdd-ext:CaseProceedingSuspendedDate>
+			<nc:Date>2001-06-06</nc:Date>
+		</cdd-ext:CaseProceedingSuspendedDate>
+		<nc:DispositionCategoryText>CONV</nc:DispositionCategoryText>
+	</cdd-ext:StepFour>
+	<cdd-ext:StepFour>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>34000001</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>004</cdd-ext:EventSequenceNumber>
+		<cdd-ext:CourtFilingDate>
+			<nc:Date>2001-05-05</nc:Date>
+		</cdd-ext:CourtFilingDate>
+		<cdd-ext:JudicialDistrictNumber>34100</cdd-ext:JudicialDistrictNumber>
+		<nc:CaseDocketID>THIRTEEN MURDER DSP</nc:CaseDocketID>
+		<j:PleaDescriptionText xsi:nil="true" />
+		<j:ChargeCountQuantity xsi:nil="true" />
+		<j:StatuteCodeIdentification>
+			<nc:IdentificationID>PC</nc:IdentificationID>
+		</j:StatuteCodeIdentification>
+		<j:StatuteCodeSectionIdentification>
+			<nc:IdentificationID>211</nc:IdentificationID>
+		</j:StatuteCodeSectionIdentification>
+		<j:StatuteDescriptionText xsi:nil="true" />
+		<j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+		<cdd-ext:CourtDisposedChargeType>F</cdd-ext:CourtDisposedChargeType>
+		<j:StatuteLevelText xsi:nil="true" />
+		<cdd-ext:CaseProceedingSuspendedDate>
+			<nc:Date>2001-06-06</nc:Date>
+		</cdd-ext:CaseProceedingSuspendedDate>
+		<nc:DispositionCategoryText>CONV</nc:DispositionCategoryText>
+	</cdd-ext:StepFour>
+	<cdd-ext:StepFive>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>34000001</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>005</cdd-ext:EventSequenceNumber>
+		<cdd-ext:SentenceDate>
+			<nc:Date>2001-07-07</nc:Date>
+		</cdd-ext:SentenceDate>
+		<j:SentenceDescriptionText xsi:nil="true" />
+		<nc:CaseDocketID xsi:nil="true" />
+		<cdd-ext:PrisonFixedTerm>018YR</cdd-ext:PrisonFixedTerm>
+		<nc:ObligationDueAmount>
+			<nc:Amount>180.00</nc:Amount>
+		</nc:ObligationDueAmount>
+		<nc:FinancialObligationExemptionAmount xsi:nil="true" />
+	</cdd-ext:StepFive>
+	<cdd-ext:DispositionIdentificationNumber>
+		<nc:IdentificationID>15705</nc:IdentificationID>
+	</cdd-ext:DispositionIdentificationNumber>
+	<cbrn:MessageContentHeader>
+		<cbrn:MessageID>cbrn:MessageID</cbrn:MessageID>
+		<cbrn:MessageOrigin>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>DOJ_1114300000</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageOrigin>
+		<cbrn:MessageDestination>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>SCC_1100000000</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageDestination>
+		<cbrn:MessageCreationDateTime>2001-12-31T12:00:00</cbrn:MessageCreationDateTime>
+	</cbrn:MessageContentHeader>
+</icdd:InitialChargeDispositionDocument>

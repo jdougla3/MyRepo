@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:WantList w:release="4.0" w:product="NIEM" w:nillableDefault="true"
+  xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/"
+  xmlns:w="http://niem.gov/niem/wantlist/2.2"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+  xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.0/"
+  xmlns:scr="http://release.niem.gov/niem/domains/screening/4.0/"
+  xmlns:em="http://release.niem.gov/niem/domains/emergencyManagement/4.0/" xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/">
+  <w:Element w:name="cbrn:MessageContentHeader" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="em:PersonAlternateName" w:isReference="false" w:nillable="false"/>
+  <w:Element w:name="j:ArrestAgency" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:ArrestRelease" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:BookingAgency" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:ChargePlea" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:ChargeStatute" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:CourtName" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:CourtOrderIssuingJudicialOfficial"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:DriverLicense" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:DriverLicenseIdentification"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:JudicialOfficialCourt" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:PersonAugmentation" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:PersonFBIIdentification" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:PleaDescriptionText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:SanctionSuspendedObligation"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:SentenceDescriptionText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:SentenceSuspendedTerm" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:SentenceTerm" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:StatuteCodeIdentification" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:StatuteCodeSectionIdentification"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:StatuteDescriptionText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:StatuteLevelText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:TermDuration" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ActivityCategoryText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ActivityDate" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ActivityIdentification" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ActivityReasonText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:CaseDocketID" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:Date" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:DateRepresentation" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:Disposition" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:DispositionCategoryText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:DispositionReasonText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:DocumentIdentification" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:EntityOrganization" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:FinancialObligationExemptionAmount"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:IdentificationID" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:JurisdictionIdentification"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:MeasureValueAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:MeasureValueText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ObligationDueAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ObligationDueAmount" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ObligationExemption" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ObligationPaidAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:ObligationPaidAmount" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:OrganizationIdentification"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:OrganizationName" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:OrganizationOtherIdentification"
+    w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonAgeMeasure" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonBirthDate" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonEyeColorAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonEyeColorText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonFullName" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonHairColorAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonHairColorText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonHeightMeasure" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonName" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonOtherIdentification" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonRaceAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonRaceText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonSSNIdentification" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonSexAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonSexText" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonWeightMeasure" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:RoleOfAbstract" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:RoleOfPerson" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="scr:ActivityCommentText" w:isReference="false" w:nillable="true"/>
+  <w:Type w:name="cbrn:ContentHeaderType" w:isRequested="false">
+    <w:ElementInType w:name="cbrn:MessageID" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="cbrn:MessageOrigin" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="cbrn:MessageDestination"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="cbrn:MessageCreationDateTime"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="cbrn:MessageOriginOrDestinationType" w:isRequested="false">
+    <w:ElementInType w:name="nc:OrganizationIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:ArrestType" w:isRequested="true">
+    <w:ElementInType w:name="j:ArrestAgency" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:ArrestAgencyRecordIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:ArrestRelease" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:Booking" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:BookingType" w:isRequested="false">
+    <w:ElementInType w:name="j:BookingAgency" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:BookingAgencyRecordIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:ChargeType" w:isRequested="true">
+    <w:ElementInType w:name="j:ChargeCategoryDescriptionText"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:ChargeCountQuantity"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:ChargeDegreeText" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:ChargeFilingDate" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:ChargeStatute" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:CourtOrderType" w:isRequested="true">
+    <w:ElementInType w:name="j:CourtOrderIssuingJudicialOfficial"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:CourtType" w:isRequested="true">
+    <w:ElementInType w:name="j:CourtName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:DriverLicenseBaseType" w:isRequested="true">
+    <w:ElementInType w:name="j:DriverLicenseIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:DriverLicenseType" w:isRequested="true"/>
+  <w:Type w:name="j:JudicialOfficialType" w:isRequested="true">
+    <w:ElementInType w:name="j:JudicialOfficialCourt"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:PersonAugmentationType" w:isRequested="true">
+    <w:ElementInType w:name="j:DriverLicense" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:PersonFBIIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:PleaType" w:isRequested="true">
+    <w:ElementInType w:name="j:PleaDescriptionText"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:SentenceType" w:isRequested="true"/>
+  <w:Type w:name="j:StatuteType" w:isRequested="true">
+    <w:ElementInType w:name="j:StatuteCodeIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:StatuteCodeSectionIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:StatuteDescriptionText"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:StatuteLevelText" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:SubjectType" w:isRequested="true">
+    <w:ElementInType w:name="nc:RoleOfPerson" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:TermType" w:isRequested="true">
+    <w:ElementInType w:name="j:TermDuration" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="j:WarrantType" w:isRequested="true"/>
+  <w:Type w:name="nc:ActivityType" w:isRequested="true">
+    <w:ElementInType w:name="nc:ActivityIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:ActivityDate" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:AmountType" w:isRequested="true">
+    <w:ElementInType w:name="nc:Amount" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:DateType" w:isRequested="true">
+    <w:ElementInType w:name="nc:DateRepresentation"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:DisciplinaryActionType" w:isRequested="true">
+    <w:ElementInType w:name="nc:DisciplinaryActionRestitution"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:DocumentType" w:isRequested="true"/>
+  <w:Type w:name="nc:EntityType" w:isRequested="false">
+    <w:ElementInType w:name="nc:EntityRepresentation"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:IdentificationType" w:isRequested="true">
+    <w:ElementInType w:name="nc:IdentificationID" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:MeasureType" w:isRequested="true">
+    <w:ElementInType w:name="nc:MeasureValueAbstract"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:ObligationExemptionType" w:isRequested="true">
+    <w:ElementInType w:name="nc:FinancialObligationExemptionAmount"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:ObligationType" w:isRequested="true">
+    <w:ElementInType w:name="nc:ObligationDueAbstract"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:ObligationExemption"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:OrganizationType" w:isRequested="true">
+    <w:ElementInType w:name="nc:OrganizationIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:OrganizationName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:OrganizationOtherIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:PersonNameTextType" w:isRequested="true"/>
+  <w:Type w:name="nc:PersonNameType" w:isRequested="true">
+    <w:ElementInType w:name="nc:PersonFullName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:PersonType" w:isRequested="true">
+    <w:ElementInType w:name="nc:PersonAgeMeasure" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonBirthDate" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonEyeColorAbstract"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonHairColorAbstract"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonHeightMeasure"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonOtherIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonRaceAbstract"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonSexAbstract" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonSSNIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonStateIdentification"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonWeightMeasure"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:ProperNameTextType" w:isRequested="true"/>
+  <w:Type w:name="nc:ReleaseType" w:isRequested="true">
+    <w:ElementInType w:name="nc:ReleaseRecipient" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:StatusType" w:isRequested="false">
+    <w:ElementInType w:name="nc:StatusAbstract" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:StatusDescriptionText"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  <w:Type w:name="nc:TextType" w:isRequested="true"/>
+  <w:Type w:name="niem-xs:boolean" w:isRequested="true"/>
+  <w:Type w:name="niem-xs:date" w:isRequested="true"/>
+  <w:Type w:name="niem-xs:decimal" w:isRequested="true"/>
+  <w:Type w:name="niem-xs:duration" w:isRequested="true"/>
+  <w:Type w:name="niem-xs:integer" w:isRequested="true"/>
+  <w:Type w:name="niem-xs:string" w:isRequested="true"/>
+  <w:Type w:name="xs:boolean" w:isRequested="true"/>
+  <w:Type w:name="xs:date" w:isRequested="true"/>
+  <w:Type w:name="xs:decimal" w:isRequested="true"/>
+  <w:Type w:name="xs:duration" w:isRequested="true"/>
+  <w:Type w:name="xs:integer" w:isRequested="true"/>
+  <w:Type w:name="xs:string" w:isRequested="true"/>
+</w:WantList>

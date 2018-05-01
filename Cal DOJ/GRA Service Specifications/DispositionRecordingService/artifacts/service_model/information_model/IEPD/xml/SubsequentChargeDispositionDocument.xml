@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SubsequentChargeDispositionDocument xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/SubsequentChargeDispositionDocument" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://isb.srv.courts-tc.ca.gov/CADRIP/SubsequentChargeDispositionDocument ../xsd/exchange/SubsequentChargeDispositionDocument.xsd">
+   <StepOne xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <DispositionStepNumber>05</DispositionStepNumber>
+      <CountyCodeRecordSegmentNumber>39000099</CountyCodeRecordSegmentNumber>
+      <EventSequenceNumber>001</EventSequenceNumber>
+      <DispositionSubject>
+         <PersonAgeMeasure xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:nil="true"/>
+         <PersonBirthDate xmlns="http://release.niem.gov/niem/niem-core/4.0/">
+            <Date>1988-04-02</Date>
+         </PersonBirthDate>
+         <PersonEyeColorText xmlns="http://release.niem.gov/niem/niem-core/4.0/">BRO</PersonEyeColorText>
+         <PersonHairColorText xmlns="http://release.niem.gov/niem/niem-core/4.0/">BLK</PersonHairColorText>
+         <PersonHeightMeasure xmlns="http://release.niem.gov/niem/niem-core/4.0/">
+            <MeasureValueText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">504</MeasureValueText>
+         </PersonHeightMeasure>
+         <PersonName xmlns="http://release.niem.gov/niem/niem-core/4.0/">
+            <PersonFullName>BEAR,PETER MARS</PersonFullName>
+         </PersonName>
+         <PersonOtherIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                    xsi:nil="true"/>
+         <PersonRaceText xmlns="http://release.niem.gov/niem/niem-core/4.0/">B</PersonRaceText>
+         <PersonSexText xmlns="http://release.niem.gov/niem/niem-core/4.0/">M</PersonSexText>
+         <PersonSSNIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                  xsi:nil="true"/>
+         <PersonWeightMeasure xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <MeasureValueText>130</MeasureValueText>
+         </PersonWeightMeasure>
+         <PersonAlternateName xmlns="http://release.niem.gov/niem/domains/emergencyManagement/4.0/"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         <CourtTrueName>
+            <PersonFullName xmlns="http://release.niem.gov/niem/niem-core/4.0/">PAN,MICKY VENUS</PersonFullName>
+         </CourtTrueName>
+         <PersonAugmentation xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+            <DriverLicense xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+               <DriverLicenseIdentification>
+                  <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">A3096973</IdentificationID>
+               </DriverLicenseIdentification>
+            </DriverLicense>
+            <PersonFBIIdentification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+         </PersonAugmentation>
+      </DispositionSubject>
+      <ArrestDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2011-07-05</Date>
+      </ArrestDate>
+      <ArrestAgency xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <OrganizationName xmlns="http://release.niem.gov/niem/niem-core/4.0/">390000</OrganizationName>
+         <OrganizationOtherIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                          xsi:nil="true"/>
+      </ArrestAgency>
+      <ArrestAgencyRecordIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">SO 1112479 00</IdentificationID>
+      </ArrestAgencyRecordIdentification>
+      <BookingAgency xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <OrganizationName xmlns="http://release.niem.gov/niem/niem-core/4.0/">390000</OrganizationName>
+         <OrganizationOtherIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                          xsi:nil="true"/>
+      </BookingAgency>
+      <BookingAgencyRecordIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">SO 1112479 00</IdentificationID>
+      </BookingAgencyRecordIdentification>
+   </StepOne>
+   <StepTwo xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <DispositionStepNumber>05</DispositionStepNumber>
+      <CountyCodeRecordSegmentNumber>39000099</CountyCodeRecordSegmentNumber>
+      <EventSequenceNumber>002</EventSequenceNumber>
+      <DispositionEventCodeText>A</DispositionEventCodeText>
+      <ChargeCountQuantity xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">1</ChargeCountQuantity>
+      <StatuteCodeIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">PC</IdentificationID>
+      </StatuteCodeIdentification>
+      <StatuteCodeSectionIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">266I</IdentificationID>
+      </StatuteCodeSectionIdentification>
+      <StatuteDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">PANDERING</StatuteDescriptionText>
+      <ChargeCategoryDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">F</ChargeCategoryDescriptionText>
+      <StatuteLevelText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:nil="true"/>
+      <ReleaseRecipient xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:nil="true"/>
+      <ReasonForNonFilingCodeText>G</ReasonForNonFilingCodeText>
+      <OriginalCourt>
+         <OrganizationName xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:nil="true"/>
+         <OrganizationOtherIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                          xsi:nil="true"/>
+         <CaseDocketID xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:nil="true"/>
+      </OriginalCourt>
+   </StepTwo>
+   <StepTwo xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <DispositionStepNumber>05</DispositionStepNumber>
+      <CountyCodeRecordSegmentNumber>39000099</CountyCodeRecordSegmentNumber>
+      <EventSequenceNumber>003</EventSequenceNumber>
+      <DispositionEventCodeText>A</DispositionEventCodeText>
+      <ChargeCountQuantity xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">1</ChargeCountQuantity>
+      <StatuteCodeIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">PC</IdentificationID>
+      </StatuteCodeIdentification>
+      <StatuteCodeSectionIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">266H</IdentificationID>
+      </StatuteCodeSectionIdentification>
+      <StatuteDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">PIMPING</StatuteDescriptionText>
+      <ChargeCategoryDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">F</ChargeCategoryDescriptionText>
+      <StatuteLevelText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:nil="true"/>
+      <ReleaseRecipient xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:nil="true"/>
+      <ReasonForNonFilingCodeText>G</ReasonForNonFilingCodeText>
+      <OriginalCourt>
+         <OrganizationName xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:nil="true"/>
+         <OrganizationOtherIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                          xsi:nil="true"/>
+         <CaseDocketID xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:nil="true"/>
+      </OriginalCourt>
+   </StepTwo>
+   <StepFour xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <DispositionStepNumber>05</DispositionStepNumber>
+      <CountyCodeRecordSegmentNumber>39000099</CountyCodeRecordSegmentNumber>
+      <EventSequenceNumber>004</EventSequenceNumber>
+      <CourtFilingDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2011-07-07</Date>
+      </CourtFilingDate>
+      <JudicialDistrictNumber>39460</JudicialDistrictNumber>
+      <CaseDocketID xmlns="http://release.niem.gov/niem/niem-core/4.0/">SF117891A</CaseDocketID>
+      <PleaDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:nil="true"/>
+      <ChargeCountQuantity xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">1</ChargeCountQuantity>
+      <StatuteCodeIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">PC</IdentificationID>
+      </StatuteCodeIdentification>
+      <StatuteCodeSectionIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">266I</IdentificationID>
+      </StatuteCodeSectionIdentification>
+      <StatuteDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">PANDERING</StatuteDescriptionText>
+      <ChargeCategoryDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">F</ChargeCategoryDescriptionText>
+      <StatuteLevelText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:nil="true"/>
+      <CaseProceedingSuspendedDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2011-10-26</Date>
+      </CaseProceedingSuspendedDate>
+      <DispositionCategoryText xmlns="http://release.niem.gov/niem/niem-core/4.0/">DISM</DispositionCategoryText>
+      <DismissedReasonCodeText>A</DismissedReasonCodeText>
+   </StepFour>
+   <StepFour xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <DispositionStepNumber>05</DispositionStepNumber>
+      <CountyCodeRecordSegmentNumber>39000099</CountyCodeRecordSegmentNumber>
+      <EventSequenceNumber>005</EventSequenceNumber>
+      <CourtFilingDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2011-07-07</Date>
+      </CourtFilingDate>
+      <JudicialDistrictNumber>39460</JudicialDistrictNumber>
+      <CaseDocketID xmlns="http://release.niem.gov/niem/niem-core/4.0/">SF117891A</CaseDocketID>
+      <PleaDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:nil="true"/>
+      <ChargeCountQuantity xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">1</ChargeCountQuantity>
+      <StatuteCodeIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">PC</IdentificationID>
+      </StatuteCodeIdentification>
+      <StatuteCodeSectionIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">653.22(A)</IdentificationID>
+      </StatuteCodeSectionIdentification>
+      <StatuteDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">LOITERING TO COMMIT PROSTITUTION</StatuteDescriptionText>
+      <ChargeCategoryDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">F</ChargeCategoryDescriptionText>
+      <CourtDisposedChargeType>M</CourtDisposedChargeType>
+      <StatuteLevelText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:nil="true"/>
+      <CaseProceedingSuspendedDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2011-10-26</Date>
+      </CaseProceedingSuspendedDate>
+      <DispositionCategoryText xmlns="http://release.niem.gov/niem/niem-core/4.0/">CONV</DispositionCategoryText>
+   </StepFour>
+   <StepFour xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <DispositionStepNumber>05</DispositionStepNumber>
+      <CountyCodeRecordSegmentNumber>39000099</CountyCodeRecordSegmentNumber>
+      <EventSequenceNumber>007</EventSequenceNumber>
+      <CourtFilingDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2011-07-07</Date>
+      </CourtFilingDate>
+      <JudicialDistrictNumber>39460</JudicialDistrictNumber>
+      <CaseDocketID xmlns="http://release.niem.gov/niem/niem-core/4.0/">SF117891A</CaseDocketID>
+      <PleaDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:nil="true"/>
+      <ChargeCountQuantity xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">1</ChargeCountQuantity>
+      <StatuteCodeIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">PC</IdentificationID>
+      </StatuteCodeIdentification>
+      <StatuteCodeSectionIdentification xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">
+         <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">653.22(A)</IdentificationID>
+      </StatuteCodeSectionIdentification>
+      <StatuteDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">LOITERING TO COMMIT PROSTITUTION</StatuteDescriptionText>
+      <ChargeCategoryDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/">F</ChargeCategoryDescriptionText>
+      <StatuteLevelText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:nil="true"/>
+      <DispositionCategoryText xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               xsi:nil="true"/>
+      <SubsequentActionDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2014-11-13</Date>
+      </SubsequentActionDate>
+      <DispositionSubsequentActionCodeText>71</DispositionSubsequentActionCodeText>
+   </StepFour>
+   <StepFive xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <DispositionStepNumber>05</DispositionStepNumber>
+      <CountyCodeRecordSegmentNumber>39000099</CountyCodeRecordSegmentNumber>
+      <EventSequenceNumber>006</EventSequenceNumber>
+      <SentenceDate>
+         <Date xmlns="http://release.niem.gov/niem/niem-core/4.0/">2011-10-26</Date>
+      </SentenceDate>
+      <SentenceDescriptionText xmlns="http://release.niem.gov/niem/domains/jxdm/6.0/"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               xsi:nil="true"/>
+      <CaseDocketID xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:nil="true"/>
+      <Probation>
+         <ActivityIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                 xsi:nil="true"/>
+         <ProbationCategoryText>C</ProbationCategoryText>
+         <ProbationTerm>003YR</ProbationTerm>
+      </Probation>
+      <JailTerm>002DS</JailTerm>
+      <ObligationDueAmount xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <Amount>10</Amount>
+      </ObligationDueAmount>
+      <FinancialObligationExemptionAmount xmlns="http://release.niem.gov/niem/niem-core/4.0/"
+                                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <Amount>100</Amount>
+      </FinancialObligationExemptionAmount>
+   </StepFive>
+   <DispositionIdentificationNumber xmlns="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension">
+      <IdentificationID xmlns="http://release.niem.gov/niem/niem-core/4.0/">67843</IdentificationID>
+   </DispositionIdentificationNumber>
+   <MessageContentHeader xmlns="http://release.niem.gov/niem/domains/cbrn/4.0/">
+      <MessageID>f8c10b39-55d0-4701-a32a-53a7b244c2f2</MessageID>
+      <MessageOrigin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <OrganizationIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/">
+            <IdentificationID>DOJ_1114300000</IdentificationID>
+         </OrganizationIdentification>
+      </MessageOrigin>
+      <MessageDestination xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <OrganizationIdentification xmlns="http://release.niem.gov/niem/niem-core/4.0/">
+            <IdentificationID>SCC_1100000000</IdentificationID>
+         </OrganizationIdentification>
+      </MessageDestination>
+      <MessageCreationDateTime>2015-07-01T11:51:04.020-07:00</MessageCreationDateTime>
+   </MessageContentHeader>
+</SubsequentChargeDispositionDocument>

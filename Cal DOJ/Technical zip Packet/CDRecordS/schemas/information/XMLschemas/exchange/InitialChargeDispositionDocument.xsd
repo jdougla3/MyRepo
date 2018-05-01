@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 (x64) (http://www.altova.com) by Gary Gurbhej (Judicial Council of California) -->
+<xsd:schema xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:i="http://niem.gov/niem/appinfo/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:cdd="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocument" xmlns:cdd-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/3.0/" xmlns:ns1="https://isb.srv.courts-tc.ca.gov/CADRIP/InitialChargeDispositionDocument" xmlns:ns2="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/InitialChargeDispositionDocument" version="1">
+	<xsd:annotation>
+		<xsd:documentation>Initial Charge Disposition Document</xsd:documentation>
+		<xsd:appinfo>
+			<i:ConformantIndicator>true</i:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="../subset/niem/structures/2.0/structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/appinfo/2.0" schemaLocation="../subset/niem/appinfo/2.0/appinfo.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="../subset/niem/niem-core/2.0/niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="../subset/niem/domains/jxdm/4.0/jxdm.xsd"/>
+	<xsd:import namespace="http://release.niem.gov/niem/domains/cbrn/3.0/" schemaLocation="../subset3.0/niem/domains/cbrn/3.0/cbrn.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="../subset/niem/proxy/xsd/2.0/xsd.xsd"/>
+	<xsd:import namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension" schemaLocation="../extension/ChargeDispositionDocument-ext.xsd"/>
+	<xsd:element name="InitialChargeDispositionDocument">
+		<xsd:annotation>
+			<xsd:documentation>Root element for a Charge Disposition Document</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="cdd-ext:ChargeDispositionDocumentType">
+					<xsd:sequence>
+						<xsd:element ref="cbrn:MessageContentHeader"/>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

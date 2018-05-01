@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns6:ChargeDispositionErrorDocument xmlns:ns2="http://release.niem.gov/niem/niem-core/3.0/"
+xmlns:ns1="http://release.niem.gov/niem/structures/3.0/" xmlns:ns4="http://release.niem.gov/niem/domains/jxdm/5.0/"
+xmlns:ns3="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension"
+xmlns:ns5="http://release.niem.gov/niem/domains/cbrn/3.0/"
+xmlns:ns6="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument">
+  <ns3:ChargeDispositionError>
+    <ns3:DispositionIdentificationNumber>
+      <ns2:IdentificationID>21313090598013044899999</ns2:IdentificationID>
+    </ns3:DispositionIdentificationNumber>
+    <ns4:BookingAgency xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+    <ns4:ArrestAgency xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+    <ns3:ChargeDispositionSubject>
+      <ns3:DispositionSubject>
+        <ns2:RoleOfPerson>
+          <ns2:PersonName>
+            <ns2:PersonGivenName>RUBBLE,WOODY BILLIE</ns2:PersonGivenName>
+          </ns2:PersonName>
+        </ns2:RoleOfPerson>
+      </ns3:DispositionSubject>
+    </ns3:ChargeDispositionSubject>
+    <ns3:DispositionError>
+      <ns3:ErrorFieldName>DISPOSITION_ID_NUM</ns3:ErrorFieldName>
+      <ns3:ErrorContent>21313090598013044899999</ns3:ErrorContent>
+      <ns3:ValidationCheckDetail>DOJ is unable to parse the XML. Please correct and resubmit.
+      Error:DispositionIdentificationNumber longer than 20</ns3:ValidationCheckDetail>
+      <ns3:ErrorMnemonic></ns3:ErrorMnemonic>
+      <ns3:DispositionErrorCode>
+        <ns3:LawEnforcementErrors>100</ns3:LawEnforcementErrors>
+      </ns3:DispositionErrorCode>
+    </ns3:DispositionError>
+  </ns3:ChargeDispositionError>
+  <ns5:MessageContentHeader>
+    <ns5:MessageID>4l87c-p4f6-46k2-bl96-92a</ns5:MessageID>
+    <ns5:MessageOrigin ns1:id="DOJ_1100000000" />
+    <ns5:MessageDestination ns1:id="SJQ_1113900000" />
+    <ns5:MessageCreationDateTime>2016-04-20T16:25:04.954-07:00</ns5:MessageCreationDateTime>
+  </ns5:MessageContentHeader>
+</ns6:ChargeDispositionErrorDocument>

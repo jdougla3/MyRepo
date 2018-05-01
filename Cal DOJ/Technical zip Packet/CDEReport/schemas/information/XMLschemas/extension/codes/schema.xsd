@@ -1,0 +1,2106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cdec="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorCodes" xmlns:i="http://niem.gov/niem/appinfo/2.0" targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorCodes" version="1.0">
+	<xsd:annotation>
+		<xsd:documentation>DOJ Charge Disposition Error Codes</xsd:documentation>
+		<xsd:appinfo>
+			<i:ConformantIndicator>true</i:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://niem.gov/niem/appinfo/2.0" schemaLocation="../codes/niem/appinfo/2.0/appinfo.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="../codes/niem/structures/2.0/structures.xsd"/>
+	<xsd:simpleType name="AllStepErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that appy to all steps</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<!--
+			<xsd:enumeration value="100">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Step Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="101">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Record Segment #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="102">
+				<xsd:annotation>
+					<xsd:documentation>Record Segment # Not Sequential</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="103">
+				<xsd:annotation>
+					<xsd:documentation>REC Sgmt's Cnty Code not on TBL</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="106">
+				<xsd:annotation>
+					<xsd:documentation>Event Sequence # not Sequential</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="107">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Event Sequence #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="108">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Report Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="150">
+				<xsd:annotation>
+					<xsd:documentation>Improper Step Order</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="150">
+				<xsd:annotation>
+					<xsd:documentation>Improper Step Order</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="150">
+				<xsd:annotation>
+					<xsd:documentation>Improper Step Order</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="153">
+				<xsd:annotation>
+					<xsd:documentation>Exceeds 99 Step 02</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="154">
+				<xsd:annotation>
+					<xsd:documentation>Exceeds 99 Step 04</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="155">
+				<xsd:annotation>
+					<xsd:documentation>Exceeds 99 Step 05</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+-->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="AllStepErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that appy to all steps</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:AllStepErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step1CodesCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Personal Descriptor, Booking Errors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<!--
+			<xsd:enumeration value="156">
+				<xsd:annotation>
+					<xsd:documentation>No Step 01</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="157">
+				<xsd:annotation>
+					<xsd:documentation>Multiple Step 01</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="200">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="201">
+				<xsd:annotation>
+					<xsd:documentation>Name Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="202">
+				<xsd:annotation>
+					<xsd:documentation>No Other Character May Follow an Asterisk</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="203">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Date of Birth</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="204">
+				<xsd:annotation>
+					<xsd:documentation>DOB Invalid/120 Years Prior to DOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="205">
+				<xsd:annotation>
+					<xsd:documentation>DOB Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="206">
+				<xsd:annotation>
+					<xsd:documentation>DOB cannot = DOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="207">
+				<xsd:annotation>
+					<xsd:documentation>DOB Subsequent to DOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="208">
+				<xsd:annotation>
+					<xsd:documentation>DOB Less Than 7 Years from DOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="303">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Arresting Agency</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="304">
+				<xsd:annotation>
+					<xsd:documentation>Not Found on ORI Type 1 Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="304">
+				<xsd:annotation>
+					<xsd:documentation>Not Found on ORI Type 1 Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="305">
+				<xsd:annotation>
+					<xsd:documentation>Not Found on Agency Type Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="305">
+				<xsd:annotation>
+					<xsd:documentation>Not Found on Agency Type Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="306">
+				<xsd:annotation>
+					<xsd:documentation>Not Found on Place of Birth Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="306">
+				<xsd:annotation>
+					<xsd:documentation>Not Found on Place of Birth Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="307">
+				<xsd:annotation>
+					<xsd:documentation>Not Found on CHP Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="308">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Date of Arrest/Event</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="309">
+				<xsd:annotation>
+					<xsd:documentation>Booking Agency Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="311">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Booking Agency</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="312">
+				<xsd:annotation>
+					<xsd:documentation>Arresting Agency Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="500">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Age</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="501">
+				<xsd:annotation>
+					<xsd:documentation>Duplicate Name/Court True Name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="502">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Eye Color</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="503">
+				<xsd:annotation>
+					<xsd:documentation>Invalid FBI #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="504">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Character-FP for DOJ</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="505">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Hair Description</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="506">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Height</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="507">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Calif Driver's License</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="508">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Weight</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="509">
+				<xsd:annotation>
+					<xsd:documentation>Space(s) Precede/Follow a Hyphen/Comma/Space</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="510">
+				<xsd:annotation>
+					<xsd:documentation>Social Security # Not Numeric</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="511">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Social Security #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="518">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Court True Name of Subject</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="521">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Calif Identification #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="522">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Arresting Agency File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="523">
+				<xsd:annotation>
+					<xsd:documentation>Arresting &amp; Booking Agency File # Not Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="523">
+				<xsd:annotation>
+					<xsd:documentation>Arresting &amp; Booking Agency File # Not Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="531">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Booking Agency File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="532">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Race</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="631">
+				<xsd:annotation>
+					<xsd:documentation>Arresting Agency File # Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="632">
+				<xsd:annotation>
+					<xsd:documentation>Booking Agency File # Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="693">
+				<xsd:annotation>
+					<xsd:documentation>Space not Allowed in Fifth Position of Agency Literal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="693">
+				<xsd:annotation>
+					<xsd:documentation>Space not Allowed in Fifth Position of Agency Literal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+-->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step1CodesCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Personal Descriptor, Booking Errors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step1CodesCodeSimpleType">
+				<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step2ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>ProsecutionErrors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<!--
+			<xsd:enumeration value="158">
+				<xsd:annotation>
+					<xsd:documentation>No Step 02</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="159">
+				<xsd:annotation>
+					<xsd:documentation>Missing Arrest Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="400">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="400">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="401">
+				<xsd:annotation>
+					<xsd:documentation>1203.2 PC and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="401">
+				<xsd:annotation>
+					<xsd:documentation>1203.2 PC and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="402">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Statute Code Identifier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="403">
+				<xsd:annotation>
+					<xsd:documentation>849b and Bail/Extradited present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="403">
+				<xsd:annotation>
+					<xsd:documentation>849b and Bail/Extradited present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="403">
+				<xsd:annotation>
+					<xsd:documentation>849b and Bail/Extradited present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="404">
+				<xsd:annotation>
+					<xsd:documentation>849b and Juvenile Dispo present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="404">
+				<xsd:annotation>
+					<xsd:documentation>849b and Juvenile Dispo present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="404">
+				<xsd:annotation>
+					<xsd:documentation>849b and Juvenile Dispo present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="405">
+				<xsd:annotation>
+					<xsd:documentation>849(B) PC &amp; RTO Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="405">
+				<xsd:annotation>
+					<xsd:documentation>849(B) PC &amp; RTO Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="405">
+				<xsd:annotation>
+					<xsd:documentation>849(B) PC &amp; RTO Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="406">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Other Law Enf Dispo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="407">
+				<xsd:annotation>
+					<xsd:documentation>DOD w/o Law Enforc or Pros Dispo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="408">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Juvenile Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="409">
+				<xsd:annotation>
+					<xsd:documentation>DIS Invalid-No Out-of -Co Warr</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="410">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Dispo for Out-of-County Warr</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="411">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and 1203.2 present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="411">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and 1203.2 present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="412">
+				<xsd:annotation>
+					<xsd:documentation>Reason for Nonfiling &amp; Refiling Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="412">
+				<xsd:annotation>
+					<xsd:documentation>Reason for Nonfiling &amp; Refiling Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="413">
+				<xsd:annotation>
+					<xsd:documentation>Pros Refiling and 1203.2 PC Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="413">
+				<xsd:annotation>
+					<xsd:documentation>Pros Refiling and 1203.2 PC Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="414">
+				<xsd:annotation>
+					<xsd:documentation>1203.2 PC Indicator Not Y, X or Space</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="415">
+				<xsd:annotation>
+					<xsd:documentation>Pros Defrl Indicator Not S, U, or Space</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="416">
+				<xsd:annotation>
+					<xsd:documentation>Pros Refiling indicator not Y, X or Space</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="417">
+				<xsd:annotation>
+					<xsd:documentation>Out-of-Co &amp; In Co Warr # Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="418">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing STAT Code Sec/Subsec</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="424">
+				<xsd:annotation>
+					<xsd:documentation>Prosecutor Refile and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="424">
+				<xsd:annotation>
+					<xsd:documentation>Prosecutor Refile and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="465">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Bail/Extradited present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="465">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Bail/Extradited present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="512">
+				<xsd:annotation>
+					<xsd:documentation>Duplicate Reason for Release</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="513">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Reason for Release #1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="514">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Reason for Release #2</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="515">
+				<xsd:annotation>
+					<xsd:documentation>Reason for Release #1 Not Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="516">
+				<xsd:annotation>
+					<xsd:documentation>Invalid 849(B) PC Ind</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="517">
+				<xsd:annotation>
+					<xsd:documentation>849(B) PC Indicator Not 1 or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="524">
+				<xsd:annotation>
+					<xsd:documentation>Invalid reason for Nonfiling #1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="525">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Reason for Nonfiling #2</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="526">
+				<xsd:annotation>
+					<xsd:documentation>Duplicate Reason for Nonfiling</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="527">
+				<xsd:annotation>
+					<xsd:documentation>Reason for Nonfiling #1 Not Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="528">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Rel, Nonfiling, or Sub Act Date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="529">
+				<xsd:annotation>
+					<xsd:documentation>DOD Prior to DOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="530">
+				<xsd:annotation>
+					<xsd:documentation>Invalid In-County Warrant #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="533">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Org Court File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="533">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Org Court File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="535">
+				<xsd:annotation>
+					<xsd:documentation>Jud Dist # Not on Master Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="536">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Org Court Jud Dist #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="536">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Org Court Jud Dist #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="537">
+				<xsd:annotation>
+					<xsd:documentation>No Out-of-County Warrant Number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="538">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Out-of-County Warrant #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="539">
+				<xsd:annotation>
+					<xsd:documentation>Previous Alleg/Enhanc Code Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="543">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Rel to Agency</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="544">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Type of Event</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="545">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Warrant Issuing Agency</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="546">
+				<xsd:annotation>
+					<xsd:documentation>Missing Warrant Issuing Agency</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="548">
+				<xsd:annotation>
+					<xsd:documentation>Missing Either 1203.2 PC or Prosecutor Refiling Field</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="548">
+				<xsd:annotation>
+					<xsd:documentation>Missing Either 1203.2 PC or Prosecutor Refiling Field</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="551">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Literal Identifier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="554">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Arrest Charge Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="558">
+				<xsd:annotation>
+					<xsd:documentation>849b Ind No Reason.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="561">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Number of Offenses</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="562">
+				<xsd:annotation>
+					<xsd:documentation>Step 04 Cannot Follow This Step 02</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="569">
+				<xsd:annotation>
+					<xsd:documentation>Step 04 Cannot Follow Successful Pros Def</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="572">
+				<xsd:annotation>
+					<xsd:documentation>849b and Non-Filing present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="572">
+				<xsd:annotation>
+					<xsd:documentation>849b and Non-Filing present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="572">
+				<xsd:annotation>
+					<xsd:documentation>849b and Non-Filing present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="573">
+				<xsd:annotation>
+					<xsd:documentation>849b and 1203.2 present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="573">
+				<xsd:annotation>
+					<xsd:documentation>849b and 1203.2 present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="573">
+				<xsd:annotation>
+					<xsd:documentation>849b and 1203.2 present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="574">
+				<xsd:annotation>
+					<xsd:documentation>849b and Prosecutor Refile present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="574">
+				<xsd:annotation>
+					<xsd:documentation>849b and Prosecutor Refile present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="574">
+				<xsd:annotation>
+					<xsd:documentation>849b and Prosecutor Refile present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="579">
+				<xsd:annotation>
+					<xsd:documentation>849b and Original JD # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="579">
+				<xsd:annotation>
+					<xsd:documentation>849b and Original JD # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="579">
+				<xsd:annotation>
+					<xsd:documentation>849b and Original JD # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="581">
+				<xsd:annotation>
+					<xsd:documentation>849b and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="581">
+				<xsd:annotation>
+					<xsd:documentation>849b and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="581">
+				<xsd:annotation>
+					<xsd:documentation>849b and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="582">
+				<xsd:annotation>
+					<xsd:documentation>849b Ind and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="582">
+				<xsd:annotation>
+					<xsd:documentation>849b Ind and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="582">
+				<xsd:annotation>
+					<xsd:documentation>849b Ind and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="584">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Non-Filing present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="584">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Non-Filing present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="585">
+				<xsd:annotation>
+					<xsd:documentation>RTO and 1203.2 PC present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="585">
+				<xsd:annotation>
+					<xsd:documentation>RTO and 1203.2 PC present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="586">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Prosecutor Refile present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="586">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Prosecutor Refile present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="587">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Original JD# present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="587">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Original JD# present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="588">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="588">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="590">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="590">
+				<xsd:annotation>
+					<xsd:documentation>RTO and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="591">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Non-Filing present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="591">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Non-Filing present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="592">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and 1203.2 PC present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="592">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and 1203.2 PC present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="593">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Prosecutor Refile present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="593">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Prosecutor Refile present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="594">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Original JD# present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="594">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Original JD# present.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="595">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="595">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="596">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="596">
+				<xsd:annotation>
+					<xsd:documentation>Juvenile Dispo and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="597">
+				<xsd:annotation>
+					<xsd:documentation>TOD Present w/No Conv, Csup, Htoa, or Flct</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="598">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Type of Trial</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="600">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Non-Filing present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="600">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Non-Filing present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="601">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and 1203.2 PC present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="601">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and 1203.2 PC present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="602">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Prosecutor Refile present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="602">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Prosecutor Refile present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="603">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Original JD # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="603">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Original JD # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="608">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="608">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="614">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="614">
+				<xsd:annotation>
+					<xsd:documentation>Bail/Extradited and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="617">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and Original JD # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="617">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and Original JD # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="627">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="627">
+				<xsd:annotation>
+					<xsd:documentation>Non-Filing and Original File # present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="629">
+				<xsd:annotation>
+					<xsd:documentation>Original JD # and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="629">
+				<xsd:annotation>
+					<xsd:documentation>Original JD # and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="630">
+				<xsd:annotation>
+					<xsd:documentation>Original File # and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="630">
+				<xsd:annotation>
+					<xsd:documentation>Original File # and Suc/Unsuc Pros Def present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="651">
+				<xsd:annotation>
+					<xsd:documentation>Original Court JD# Required</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="653">
+				<xsd:annotation>
+					<xsd:documentation>Original Court File # Required</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+-->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step2ErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>ProsecutionErrors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step2ErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step4ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Court Errors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<!--
+			<xsd:enumeration value="160">
+				<xsd:annotation>
+					<xsd:documentation>Missing Court Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="160">
+				<xsd:annotation>
+					<xsd:documentation>Missing Court Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="160">
+				<xsd:annotation>
+					<xsd:documentation>Missing Court Level Disposition</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="418">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing STAT Code Sec/Subsec</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="418">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing STAT Code Sec/Subsec</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="418">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing STAT Code Sec/Subsec</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="418">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing STAT Code Sec/Subsec</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="419">
+				<xsd:annotation>
+					<xsd:documentation>Allegation Without Valid MA-ZZ Enhancmnt</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="420">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Statute Code Identifier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="421">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Court Jud Dist #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="423">
+				<xsd:annotation>
+					<xsd:documentation>DOD w/o Statute Code Ident</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="425">
+				<xsd:annotation>
+					<xsd:documentation>DOD w/o Filing Charge Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="426">
+				<xsd:annotation>
+					<xsd:documentation>No Disposition Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="427">
+				<xsd:annotation>
+					<xsd:documentation>Crt Dispo and Proc Susp Type Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="427">
+				<xsd:annotation>
+					<xsd:documentation>Crt Dispo and Proc Susp Type Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="428">
+				<xsd:annotation>
+					<xsd:documentation>Crt Dispo and Subsequent Action Type Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="428">
+				<xsd:annotation>
+					<xsd:documentation>Crt Dispo and Subsequent Action Type Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="429">
+				<xsd:annotation>
+					<xsd:documentation>Sub Act and Procee Susp Type Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="429">
+				<xsd:annotation>
+					<xsd:documentation>Sub Act and Procee Susp Type Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="430">
+				<xsd:annotation>
+					<xsd:documentation>Court Disposition Type Not on Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="431">
+				<xsd:annotation>
+					<xsd:documentation>Proceedings Suspended Type Not on Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="432">
+				<xsd:annotation>
+					<xsd:documentation>DOD w/o Statute Code Section/Subsection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="433">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Subsequent Action Code</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="434">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent Action Code Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="435">
+				<xsd:annotation>
+					<xsd:documentation>Final Plea w/o Conv or Csup or DEFRD JUDG Dis</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="438">
+				<xsd:annotation>
+					<xsd:documentation>Invalid DIS w/Consolidated Court File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="439">
+				<xsd:annotation>
+					<xsd:documentation>Alleg/Enhanc Code Present W/O Code Section/Ident</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="440">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Disposed Charge Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="441">
+				<xsd:annotation>
+					<xsd:documentation>Conv, Csup, HTOA, or Flct w/o TOD</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="442">
+				<xsd:annotation>
+					<xsd:documentation>DISM with Sentence Info other than Fine/Restitution present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="443">
+				<xsd:annotation>
+					<xsd:documentation>DOD/Subsequent Action/Sentencing Date Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="447">
+				<xsd:annotation>
+					<xsd:documentation>Proc SS Type Must be Preceded by Conviction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="449">
+				<xsd:annotation>
+					<xsd:documentation>Court or Sentence Step Should Follow SAT</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="450">
+				<xsd:annotation>
+					<xsd:documentation>DOD and Subsqnt Action Date Both present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="450">
+				<xsd:annotation>
+					<xsd:documentation>DOD and Subsqnt Action Date Both present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="451">
+				<xsd:annotation>
+					<xsd:documentation>Dismissed Reason w/o Dispo Type of DISM</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="452">
+				<xsd:annotation>
+					<xsd:documentation>No Action May Follow this Sub/Act Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="454">
+				<xsd:annotation>
+					<xsd:documentation>Diversion and Other Sentence Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="459">
+				<xsd:annotation>
+					<xsd:documentation>STEP TYPE MAY NOT FOLLOW FINAL SUB ACT</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="466">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Filing Charge Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="468">
+				<xsd:annotation>
+					<xsd:documentation>Drug Crt/Def Judge and Other Sent Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="478">
+				<xsd:annotation>
+					<xsd:documentation>Stat Code, Stat Ident and Filing Chrg Type Must be Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="481">
+				<xsd:annotation>
+					<xsd:documentation>Sentence Not Allowed with Dispo Type</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="482">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent Action DOD After July 11, 2006</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="483">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent Action DOD Prior to July 12, 2006</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="529">
+				<xsd:annotation>
+					<xsd:documentation>DOD Prior to DOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="542">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Alleg/Enhanc Code</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="549">
+				<xsd:annotation>
+					<xsd:documentation>Missing Court File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="550">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Court File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="551">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Literal Identifier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="552">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Consolidated Court File #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="555">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Statute Degree</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="555">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Statute Degree</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="557">
+				<xsd:annotation>
+					<xsd:documentation>DEG Must Be 1 or 2 When Court Dispo Type =
+CONV</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="559">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Court Filing Date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="560">
+				<xsd:annotation>
+					<xsd:documentation>Invalid CourtDispo/Proc Suspended Date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="561">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Number of Offenses</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="563">
+				<xsd:annotation>
+					<xsd:documentation>DOD Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="564">
+				<xsd:annotation>
+					<xsd:documentation>Dispo Type of DISM W/O Dismissed Reason</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="566">
+				<xsd:annotation>
+					<xsd:documentation>Subsequent Action Date Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="567">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Subsequent Action Date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="568">
+				<xsd:annotation>
+					<xsd:documentation>Dismissed Reason Not on Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="571">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Statute Literal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="571">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Statute Literal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="575">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Final Plea</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="577">
+				<xsd:annotation>
+					<xsd:documentation>Court Final Plea &amp; Type of Trial are Mutually 
+Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="578">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Allegation Proven Indicator</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="583">
+				<xsd:annotation>
+					<xsd:documentation>Duplicate Alleg/Enhanc Code on Same Charge</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="639">
+				<xsd:annotation>
+					<xsd:documentation>DOD Prior to DOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="655">
+				<xsd:annotation>
+					<xsd:documentation>No Sent or Proc Susp Type w/Conv, Csup, Htoa or Flct
+Dis
+No Sent or Proc Susp Type w/Conv, Csup, Htoa or Flct
+Dis</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+-->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step4ErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Court Errors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step4ErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step5ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Sentence Errors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<!--
+			<xsd:enumeration value="436">
+				<xsd:annotation>
+					<xsd:documentation>Sentence Information Must Be Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="436">
+				<xsd:annotation>
+					<xsd:documentation>Sentence Information Must Be Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="453">
+				<xsd:annotation>
+					<xsd:documentation>CYA Term and Other Sentence Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="454">
+				<xsd:annotation>
+					<xsd:documentation>Diversion and Other Sentence Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="455">
+				<xsd:annotation>
+					<xsd:documentation>Proceeding Suspended Diversion Not Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="456">
+				<xsd:annotation>
+					<xsd:documentation>Death Sentence &amp; Other Sentence Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="458">
+				<xsd:annotation>
+					<xsd:documentation>PROB Cond: JL Susp w/o Prob Length 1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="460">
+				<xsd:annotation>
+					<xsd:documentation>Sen Stayed not Y or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="461">
+				<xsd:annotation>
+					<xsd:documentation>Prison Sentence - Type of Charge Not Felony</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="461">
+				<xsd:annotation>
+					<xsd:documentation>Prison Sentence - Type of Charge Not Felony</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="461">
+				<xsd:annotation>
+					<xsd:documentation>Prison Sentence - Type of Charge Not Felony</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="461">
+				<xsd:annotation>
+					<xsd:documentation>Prison Sentence - Type of Charge Not Felony</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="461">
+				<xsd:annotation>
+					<xsd:documentation>Prison Sentence - Type of Charge Not Felony</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="464">
+				<xsd:annotation>
+					<xsd:documentation>Work Not Y or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="468">
+				<xsd:annotation>
+					<xsd:documentation>Drug Crt/Def Judge and Other Sent Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="469">
+				<xsd:annotation>
+					<xsd:documentation>Proc Susp Drug Crt-Def Judge not present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="473">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Allegation Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="474">
+				<xsd:annotation>
+					<xsd:documentation>Alleg Sent w/No MA-ZZ or ** Qualifier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="475">
+				<xsd:annotation>
+					<xsd:documentation>Alleg Prison Length w/No Original Pris Length Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="477">
+				<xsd:annotation>
+					<xsd:documentation>Alleg Sent w/o Alleg Proven</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="479">
+				<xsd:annotation>
+					<xsd:documentation>Prison and Probation Mutually Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="479">
+				<xsd:annotation>
+					<xsd:documentation>Prison and Probation Mutually Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="480">
+				<xsd:annotation>
+					<xsd:documentation>Prison Stayed w/o Prison or Probation</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="519">
+				<xsd:annotation>
+					<xsd:documentation>Invalid CII #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="547">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Sex</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="565">
+				<xsd:annotation>
+					<xsd:documentation>Pris Suspended - No Prob/Prisn on any Step</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="599">
+				<xsd:annotation>
+					<xsd:documentation>17 PC not M or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="604">
+				<xsd:annotation>
+					<xsd:documentation>Data in Concurrent Field Not 1, 2, or 3</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="606">
+				<xsd:annotation>
+					<xsd:documentation>Data in Consecutive Field not 1, 2, or 3</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="607">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of CYA Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="609">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must be 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="610">
+				<xsd:annotation>
+					<xsd:documentation>First 3 Chars Must Be Greater Than 000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="611">
+				<xsd:annotation>
+					<xsd:documentation>Condition of Probation: Firearms Prohibition Not Y, X or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="615">
+				<xsd:annotation>
+					<xsd:documentation>Invalid/Missing Sentence Date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="616">
+				<xsd:annotation>
+					<xsd:documentation>Sentencing Date Prior to Disposition Date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="618">
+				<xsd:annotation>
+					<xsd:documentation>Fine Amount Not Numeric</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="619">
+				<xsd:annotation>
+					<xsd:documentation>Fine Suspended Length Not Numeric</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="620">
+				<xsd:annotation>
+					<xsd:documentation>ISS Not 1 or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="621">
+				<xsd:annotation>
+					<xsd:documentation>Sentence Stayed With Sentence Data</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="622">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Jail Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="623">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Jail/Fine SS</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="624">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Jail Sus Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="625">
+				<xsd:annotation>
+					<xsd:documentation>Last 2 Chars Must be Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="625">
+				<xsd:annotation>
+					<xsd:documentation>Last 2 Chars Must be Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="626">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Prob Cond:JL Sus Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="628">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="633">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Concurrent/Consecutive Case #</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="634">
+				<xsd:annotation>
+					<xsd:documentation>Conc/Cons w/Case-Case # Not Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="634">
+				<xsd:annotation>
+					<xsd:documentation>Conc/Cons w/Case-Case # Not Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="635">
+				<xsd:annotation>
+					<xsd:documentation>Case # Present - w/o CC/CS Indic of Case</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="636">
+				<xsd:annotation>
+					<xsd:documentation>Case # Not Allowed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="636">
+				<xsd:annotation>
+					<xsd:documentation>Case # Not Allowed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="637">
+				<xsd:annotation>
+					<xsd:documentation>Certification Date Prior to DOD</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="638">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Prison Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="640">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Type of PROB #2</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="641">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Type of PROB #1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="642">
+				<xsd:annotation>
+					<xsd:documentation>PROB Type Present w/o PROB Length #1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="643">
+				<xsd:annotation>
+					<xsd:documentation>PROB Type Present w/o PROB Length #2</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="644">
+				<xsd:annotation>
+					<xsd:documentation>PROB Length 2 w/o PROB Length #1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="645">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of PROB #1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="646">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of PROB #2</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="647">
+				<xsd:annotation>
+					<xsd:documentation>PROB Length #1 Present w/o PROB Type #1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="648">
+				<xsd:annotation>
+					<xsd:documentation>PROB Length #2 Present w/o PROB Type #2</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="649">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Diversion Length</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="650">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Prison Suspended Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="652">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of Prison Stayed Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="654">
+				<xsd:annotation>
+					<xsd:documentation>Restitution Amount Not Numeric</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="656">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Drg Crt/ Def Judg Length</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="660">
+				<xsd:annotation>
+					<xsd:documentation>TFPT and Allegation Sentence Present</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="661">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Length of TFPT Time</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="670">
+				<xsd:annotation>
+					<xsd:documentation>ADW1 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="671">
+				<xsd:annotation>
+					<xsd:documentation>ADW2 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="672">
+				<xsd:annotation>
+					<xsd:documentation>ADW3 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="673">
+				<xsd:annotation>
+					<xsd:documentation>ADW4 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="674">
+				<xsd:annotation>
+					<xsd:documentation>ADW5 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="675">
+				<xsd:annotation>
+					<xsd:documentation>ADW6 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="676">
+				<xsd:annotation>
+					<xsd:documentation>ADW7 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="677">
+				<xsd:annotation>
+					<xsd:documentation>ADW8 Invalid</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="678">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Certification Date</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="679">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Certification Indicator</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="680">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Court Clerk Name</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="681">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Court Clerk Title</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="682">
+				<xsd:annotation>
+					<xsd:documentation>Invalid Jud District Number</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="683">
+				<xsd:annotation>
+					<xsd:documentation>Jud District Number Not On Table</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="684">
+				<xsd:annotation>
+					<xsd:documentation>Admn and Waiv Req Data Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="685">
+				<xsd:annotation>
+					<xsd:documentation>Clk Of Crt Req Data Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="685">
+				<xsd:annotation>
+					<xsd:documentation>Clk Of Crt Req Data Missing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="686">
+				<xsd:annotation>
+					<xsd:documentation>Admn and Waiv Data Not Allowed</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="687">
+				<xsd:annotation>
+					<xsd:documentation>ADW2 &amp; ADW3 Mutually Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="687">
+				<xsd:annotation>
+					<xsd:documentation>ADW2 &amp; ADW3 Mutually Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="688">
+				<xsd:annotation>
+					<xsd:documentation>ADW7 &amp; ADW2 Mutually Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="688">
+				<xsd:annotation>
+					<xsd:documentation>ADW7 &amp; ADW2 Mutually Exclusive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="689">
+				<xsd:annotation>
+					<xsd:documentation>Condition of Probation: Searchable Probation Not Y, X or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="690">
+				<xsd:annotation>
+					<xsd:documentation>Condition of Probation: Drug Treatment Placement Not Y, X or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="692">
+				<xsd:annotation>
+					<xsd:documentation>Cond of Prob: Required to Register Not Y, X or Blank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+-->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step5ErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Sentence Errors</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step5ErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

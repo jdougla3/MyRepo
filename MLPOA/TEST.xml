@@ -1,0 +1,8 @@
+
+<ebts:Test xmlns:ebts="http://ojbc.org/ebts/Test/1.0">
+	<ebts:RecordRapBackUserDefinedElement>
+		<ebts:UserDefinedElementName>State Fingerprint ID</ebts:UserDefinedElementName>
+		<ebts:UserDefinedElementText>A398118900</ebts:UserDefinedElementText>
+	</ebts:RecordRapBackUserDefinedElement>
+</ebts:Test>
+   

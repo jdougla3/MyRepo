@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cderd:ResponseDocument xmlns:cderd="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorResponseDocument"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorResponseDocument ../xsd/exchange/ChargeDispositionErrorResponseDocument.xsd ">
+	<nc:StatusDescriptionText>Status Description Text</nc:StatusDescriptionText>
+</cderd:ResponseDocument>

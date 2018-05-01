@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>James Douglas</LastAuthor>
+  <Created>2015-11-18T03:18:47Z</Created>
+  <LastSaved>2018-04-25T02:26:47Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>16060</WindowHeight>
+  <WindowWidth>25600</WindowWidth>
+  <WindowTopX>1380</WindowTopX>
+  <WindowTopY>620</WindowTopY>
+  <TabRatio>500</TabRatio>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s22" ss:Name="Hyperlink">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#0000FF"
+    ss:Underline="Single"/>
+  </Style>
+  <Style ss:ID="s15">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s324">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s325">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s326">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s327">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s328">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s330">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Bold="1"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s331">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s332">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#0000FF"
+    ss:Underline="Single"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s333">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s347">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s348">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#DDD9C4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s349">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior ss:Color="#DDD9C4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s350">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#DDD9C4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s356">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#DDD9C4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s367" ss:Parent="s22">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#0000FF"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s368">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#0000FF"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s426">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s427">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#DDD9C4" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="ADDRESS" ss:RefersTo="=Master!C6"/>
+  <NamedRange ss:Name="EMAIL" ss:RefersTo="=Master!C8"/>
+  <NamedRange ss:Name="FIRST" ss:RefersTo="=Master!C4"/>
+  <NamedRange ss:Name="LAST" ss:RefersTo="=Master!C3"/>
+ </Names>
+ <Worksheet ss:Name="Master">
+  <Table ss:ExpandedColumnCount="27" ss:ExpandedRowCount="120" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s325" ss:DefaultColumnWidth="0"
+   ss:DefaultRowHeight="0">
+   <Column ss:StyleID="s333" ss:AutoFitWidth="0" ss:Width="88"/>
+   <Column ss:StyleID="s325" ss:AutoFitWidth="0" ss:Width="119"/>
+   <Column ss:StyleID="s326" ss:AutoFitWidth="0" ss:Width="95"/>
+   <Column ss:StyleID="s325" ss:AutoFitWidth="0" ss:Width="177"/>
+   <Column ss:StyleID="s325" ss:AutoFitWidth="0" ss:Width="77"/>
+   <Column ss:StyleID="s347" ss:AutoFitWidth="0" ss:Width="316"/>
+   <Column ss:StyleID="s15" ss:Hidden="1" ss:AutoFitWidth="0"/>
+   <Column ss:StyleID="s347" ss:AutoFitWidth="0" ss:Width="376"/>
+   <Column ss:StyleID="s325" ss:AutoFitWidth="0" ss:Width="248"/>
+   <Column ss:StyleID="s325" ss:AutoFitWidth="0" ss:Width="107"/>
+   <Column ss:StyleID="s325" ss:AutoFitWidth="0" ss:Width="181"/>
+   <Column ss:StyleID="s325" ss:AutoFitWidth="0" ss:Width="165"/>
+   <Column ss:StyleID="s325" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="123"/>
+   <Column ss:StyleID="s325" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="63"
+    ss:Span="13"/>
+   <Row ss:AutoFitHeight="0" ss:Height="29">
+    <Cell ss:StyleID="s327"><Data ss:Type="String">Zone-Property:</Data></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">Property Type:</Data></Cell>
+    <Cell ss:StyleID="s330"><Data ss:Type="String">Name:</Data><NamedCell
+      ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">Owners:</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">Membership</Data></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">Permanent Address:</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s328"><Data ss:Type="String">Email:</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">Millsite Address:</Data></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">Lake Phone:</Data></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">Home/Cell Phone:</Data></Cell>
+    <Cell ss:StyleID="s328"><Data ss:Type="String">GPS Location:</Data></Cell>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+    <Cell ss:StyleID="s324"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-01</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">4H</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Camp Wabasso</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">203 North Hamilton Street, Watertown, NY 13601</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s367" ss:HRef="mailto:mrk94@cornell.edu"><Data
+      ss:Type="String">mrk94@cornell.edu</Data><NamedCell ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">43101 County Rd 21, Theresa NY 13679</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 628-5048</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 477-4501</Data></Cell>
+    <Cell><Data ss:Type="String">44.29207, -75.75853</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-04</Data></Cell>
+    <Cell ss:StyleID="s348"><Data ss:Type="String">Lot</Data></Cell>
+    <Cell ss:StyleID="s349"><Data ss:Type="String">Astolfi</Data><NamedCell
+      ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s427"><Data ss:Type="String">Doug and Betsy</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell ss:StyleID="s349"><Data ss:Type="String">-</Data></Cell>
+    <Cell ss:StyleID="s348"><Data ss:Type="String">-</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:StyleID="s350"/>
+    <Cell ss:StyleID="s356"><Data ss:Type="String">-</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell ss:StyleID="s348"><Data ss:Type="String">Camp Tousey Road, Theresa, NY</Data></Cell>
+    <Cell ss:StyleID="s348"><Data ss:Type="String">(813) 943-5208</Data></Cell>
+    <Cell ss:StyleID="s348"><Data ss:Type="String">(352) 668-4424</Data></Cell>
+    <Cell ss:StyleID="s348"><Data ss:Type="String">44.28942, -75.76828</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-17</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Halliday</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Doug and Terrie</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">6911 Henderson Road, Jamesville, NY 13078</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s368"><Data ss:Type="String">popedoug@aol.com</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29779 Stevens Hollow Road, Theresa, NY</Data></Cell>
+    <Cell ss:StyleID="s332"><Data ss:Type="String">(315) 440-0897</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 492-3738</Data></Cell>
+    <Cell><Data ss:Type="String">44.28597, -75.77802</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-30</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Azary</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Zoltan</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">P.O. Box 1081, Occidental, CA 95465</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">-</Data><NamedCell ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29261 Stevens Hollow Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">44.28327, -75.7895</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-32</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Polhemus</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Mark and Beth</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">315 Highland Ave., Syracuse, NY 13202</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s367" ss:HRef="mailto:mepolhemus@gmail.combethpolhemus@yahoo.com"><Data
+      ss:Type="String">mepolhemus@gmail.com bethpolhemus@yahoo.com</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29205 Stevens Hollow Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">(202) 669-9099</Data></Cell>
+    <Cell><Data ss:Type="String">44.28301, -75.79017</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-37</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Gaudet</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Brian and Martha</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">3623 South 6th St., Arlington, VA 22204</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">-</Data><NamedCell ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29095 Cowles Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 482-4996</Data></Cell>
+    <Cell><Data ss:Type="String">(703) 892-0998</Data></Cell>
+    <Cell><Data ss:Type="String">44.2836, -75.79359</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-38</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Hicks</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Allen and Christina</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">29362 Cottage Hill Rd., Theresa, NY 13691</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s367"><Data ss:Type="String">-</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29052 Cowles Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 921-7727</Data></Cell>
+    <Cell><Data ss:Type="String">44.28454, -75.79316</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">1-43</Data></Cell>
+    <Cell><Data ss:Type="String">Island</Data></Cell>
+    <Cell><Data ss:Type="String">Evans</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Mark</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">P.O. Box 190, Redwood, NY 13679</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">-</Data><NamedCell ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29752 Cheese Box Island, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 482-2591</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 482-2591</Data></Cell>
+    <Cell><Data ss:Type="String">44.29172, -75.77855</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">2-06</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Hax</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Ron and Cynthia</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">455 Walnut Hill Rd., Thomaston, CT 06787</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s367" ss:HRef="mailto:chax49@gmail.com"><Data
+      ss:Type="String">chax49@gmail.com rjh0568@gmail.com</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29450 Lueck Lane, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 482-9207</Data></Cell>
+    <Cell><Data ss:Type="String">(860) 283-0568</Data></Cell>
+    <Cell><Data ss:Type="String">44.29371, -75.7846</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">2-19</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Buck</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Bill and Pat</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">2907 County Road 57, Fulton, NY 13069</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s367" ss:HRef="mailto:millsite@aol.comfoxhollowloon@gmail.com"><Data
+      ss:Type="String">millsite@aol.com foxhollowloon@gmail.com</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">29774 Fox Hollow Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 482-9246</Data></Cell>
+    <Cell><Data ss:Type="String">(315)593-6483</Data></Cell>
+    <Cell><Data ss:Type="String">44.29562, -75.77767</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">3-09</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Adams</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Bud and Judy</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">102 Kensington Rd., Syracuse, NY 13210</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s368"><Data ss:Type="String">budandjudyadams@earthlink.net</Data><NamedCell
+      ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">30381  Groner Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 482-4430</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 472-8531</Data></Cell>
+    <Cell><Data ss:Type="String">44.2986, -75.76696</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">3-10</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Meister</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Randy</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">1454 Willow Brook Dr., Boalsburg, PA 16827</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s367" ss:HRef="mailto:meisterrandy@yahoo.com"><Data
+      ss:Type="String">meisterrandy@yahoo.com</Data><NamedCell ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">30399  Groner Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">(814) 280-0784</Data></Cell>
+    <Cell><Data ss:Type="String">44.29862, -75.76656</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">3-11</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Dombrowsky</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Dick and Helen</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">7649 Admiral Dr., Liverpool, NY 13090</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">-</Data><NamedCell ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">30407  Groner Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 482-4676</Data></Cell>
+    <Cell><Data ss:Type="String">(315) 652-7462</Data></Cell>
+    <Cell><Data ss:Type="String">44.29862, -75.76617</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s331"><Data ss:Type="String">3-24</Data></Cell>
+    <Cell><Data ss:Type="String">Camp</Data></Cell>
+    <Cell><Data ss:Type="String">Douglass</Data><NamedCell ss:Name="LAST"/></Cell>
+    <Cell ss:StyleID="s426"><Data ss:Type="String">Mike and Jan</Data><NamedCell
+      ss:Name="FIRST"/></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">17 Willow Ave., Cortland, NY 13045</Data><NamedCell
+      ss:Name="ADDRESS"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s367" ss:HRef="mailto:jwdjwd@hotmail.com"><Data
+      ss:Type="String">jwdjwd@hotmail.com</Data><NamedCell ss:Name="EMAIL"/></Cell>
+    <Cell><Data ss:Type="String">30620  Groner Road, Theresa, NY</Data></Cell>
+    <Cell><Data ss:Type="String">(607) 745-8818</Data></Cell>
+    <Cell><Data ss:Type="String">(607) 753-1834</Data></Cell>
+    <Cell><Data ss:Type="String">44.29777, -75.76174</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="104"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.25"/>
+    <Footer x:Margin="0.25"/>
+    <PageMargins x:Bottom="0.5" x:Left="0.25" x:Right="0.25"/>
+   </PageSetup>
+   <Unsynced/>
+   <ZeroHeight/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>1</SplitHorizontal>
+   <TopRowBottomPane>1</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveCol>3</ActiveCol>
+     <RangeSelection>R2C4:R15C4</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

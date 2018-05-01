@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ccdd:CorrectedChargeDispositionDocument xmlns:cdd-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/"
+	xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:em="http://release.niem.gov/niem/domains/emergencyManagement/4.0/"
+	xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.0/" xmlns:ccdd="https://isb.srv.courts-tc.ca.gov/CADRIP/CorrectedChargeDispositionDocument"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://isb.srv.courts-tc.ca.gov/CADRIP/CorrectedChargeDispositionDocument ../xsd/exchange/CorrectedChargeDispositionDocument.xsd">
+	<cdd-ext:StepOne>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>39000173</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>001</cdd-ext:EventSequenceNumber>
+		<cdd-ext:DispositionSubject>
+			<nc:PersonAgeMeasure xsi:nil="true" />
+			<nc:PersonBirthDate>
+				<nc:Date>1989-02-20</nc:Date>
+			</nc:PersonBirthDate>
+			<nc:PersonEyeColorText>BRO</nc:PersonEyeColorText>
+			<nc:PersonHairColorText>BRO</nc:PersonHairColorText>
+			<nc:PersonHeightMeasure>
+				<nc:MeasureValueText>501</nc:MeasureValueText>
+			</nc:PersonHeightMeasure>
+			<nc:PersonName>
+				<nc:PersonFullName>POPINS,BETTY BILLIE</nc:PersonFullName>
+			</nc:PersonName>
+			<nc:PersonOtherIdentification xsi:nil="true" />
+			<nc:PersonRaceText>D</nc:PersonRaceText>
+			<nc:PersonSexText>F</nc:PersonSexText>
+			<nc:PersonSSNIdentification xsi:nil="true" />
+			<nc:PersonWeightMeasure>
+				<nc:MeasureValueText>100</nc:MeasureValueText>
+			</nc:PersonWeightMeasure>
+			<cdd-ext:CourtTrueName>
+				<nc:PersonFullName>RUBBLE,PLUTO MARS</nc:PersonFullName>
+			</cdd-ext:CourtTrueName>
+			<j:PersonAugmentation>
+				<j:DriverLicense xsi:nil="true" />
+				<j:PersonFBIIdentification xsi:nil="true" />
+			</j:PersonAugmentation>
+		</cdd-ext:DispositionSubject>
+		<cdd-ext:ArrestDate>
+			<nc:Date>2007-03-29</nc:Date>
+		</cdd-ext:ArrestDate>
+		<j:ArrestAgency>
+			<nc:OrganizationName>390000</nc:OrganizationName>
+			<nc:OrganizationOtherIdentification xsi:nil="true" />
+		</j:ArrestAgency>
+		<j:ArrestAgencyRecordIdentification>
+			<nc:IdentificationID>C019731</nc:IdentificationID>
+		</j:ArrestAgencyRecordIdentification>
+		<j:BookingAgency>
+			<nc:OrganizationName>390000</nc:OrganizationName>
+			<nc:OrganizationOtherIdentification xsi:nil="true" />
+		</j:BookingAgency>
+		<j:BookingAgencyRecordIdentification>
+			<nc:IdentificationID>C019731</nc:IdentificationID>
+		</j:BookingAgencyRecordIdentification>
+	</cdd-ext:StepOne>
+	<cdd-ext:StepTwo>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>39000173</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>002</cdd-ext:EventSequenceNumber>
+		<cdd-ext:DispositionEventCodeText>B</cdd-ext:DispositionEventCodeText>
+		<j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+		<j:StatuteCodeIdentification>
+			<nc:IdentificationID>PC</nc:IdentificationID>
+		</j:StatuteCodeIdentification>
+		<j:StatuteCodeSectionIdentification>
+			<nc:IdentificationID>484(A)</nc:IdentificationID>
+		</j:StatuteCodeSectionIdentification>
+		<j:StatuteDescriptionText>PETTY THEFT</j:StatuteDescriptionText>
+		<j:ChargeCategoryDescriptionText>M</j:ChargeCategoryDescriptionText>
+		<j:StatuteLevelText xsi:nil="true" />
+		<nc:ReleaseRecipient xsi:nil="true" />
+		<cdd-ext:OriginalCourt>
+			<nc:OrganizationName xsi:nil="true" />
+			<nc:OrganizationOtherIdentification xsi:nil="true" />
+			<nc:CaseDocketID xsi:nil="true" />
+		</cdd-ext:OriginalCourt>
+	</cdd-ext:StepTwo>
+	<cdd-ext:StepFour>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>39000173</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>003</cdd-ext:EventSequenceNumber>
+		<cdd-ext:CourtFilingDate>
+			<nc:Date>2007-04-05</nc:Date>
+		</cdd-ext:CourtFilingDate>
+		<cdd-ext:JudicialDistrictNumber>39460</cdd-ext:JudicialDistrictNumber>
+		<nc:CaseDocketID>SM257022A</nc:CaseDocketID>
+		<j:PleaDescriptionText xsi:nil="true" />
+		<j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+		<j:StatuteCodeIdentification>
+			<nc:IdentificationID>PC</nc:IdentificationID>
+		</j:StatuteCodeIdentification>
+		<j:StatuteCodeSectionIdentification>
+			<nc:IdentificationID>484(A)</nc:IdentificationID>
+		</j:StatuteCodeSectionIdentification>
+		<j:StatuteDescriptionText>PETTY THEFT</j:StatuteDescriptionText>
+		<j:ChargeCategoryDescriptionText>M</j:ChargeCategoryDescriptionText>
+		<cdd-ext:CourtDisposedChargeType>M</cdd-ext:CourtDisposedChargeType>
+		<j:StatuteLevelText xsi:nil="true" />
+		<cdd-ext:CaseProceedingSuspendedDate>
+			<nc:Date>2007-04-19</nc:Date>
+		</cdd-ext:CaseProceedingSuspendedDate>
+		<nc:DispositionCategoryText>CONV</nc:DispositionCategoryText>
+	</cdd-ext:StepFour>
+	<cdd-ext:StepFour>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>39000173</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>005</cdd-ext:EventSequenceNumber>
+		<cdd-ext:CourtFilingDate>
+			<nc:Date>2007-04-05</nc:Date>
+		</cdd-ext:CourtFilingDate>
+		<cdd-ext:JudicialDistrictNumber>39460</cdd-ext:JudicialDistrictNumber>
+		<nc:CaseDocketID>SM257022A</nc:CaseDocketID>
+		<j:PleaDescriptionText xsi:nil="true" />
+		<j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+		<j:StatuteCodeIdentification>
+			<nc:IdentificationID>PC</nc:IdentificationID>
+		</j:StatuteCodeIdentification>
+		<j:StatuteCodeSectionIdentification>
+			<nc:IdentificationID>484(A)</nc:IdentificationID>
+		</j:StatuteCodeSectionIdentification>
+		<j:StatuteDescriptionText>PETTY THEFT</j:StatuteDescriptionText>
+		<j:ChargeCategoryDescriptionText>M</j:ChargeCategoryDescriptionText>
+		<j:StatuteLevelText xsi:nil="true" />
+		<nc:DispositionCategoryText xsi:nil="true" />
+		<cdd-ext:SubsequentActionDate>
+			<nc:Date>2014-11-13</nc:Date>
+		</cdd-ext:SubsequentActionDate>
+		<cdd-ext:DispositionSubsequentActionCodeText>71</cdd-ext:DispositionSubsequentActionCodeText>
+	</cdd-ext:StepFour>
+	<cdd-ext:StepFive>
+		<cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+		<cdd-ext:CountyCodeRecordSegmentNumber>39000173</cdd-ext:CountyCodeRecordSegmentNumber>
+		<cdd-ext:EventSequenceNumber>004</cdd-ext:EventSequenceNumber>
+		<cdd-ext:SentenceDate>
+			<nc:Date>2007-04-19</nc:Date>
+		</cdd-ext:SentenceDate>
+		<j:SentenceDescriptionText xsi:nil="true" />
+		<nc:CaseDocketID xsi:nil="true" />
+		<cdd-ext:Probation>
+			<nc:ActivityIdentification xsi:nil="true" />
+			<cdd-ext:ProbationCategoryText>C</cdd-ext:ProbationCategoryText>
+			<cdd-ext:ProbationTerm>003YR</cdd-ext:ProbationTerm>
+		</cdd-ext:Probation>
+		<nc:ObligationDueAmount>
+			<nc:Amount>180.00</nc:Amount>
+		</nc:ObligationDueAmount>
+		<nc:FinancialObligationExemptionAmount>
+			<nc:Amount>100.00</nc:Amount>
+		</nc:FinancialObligationExemptionAmount>
+	</cdd-ext:StepFive>
+	<cdd-ext:DispositionIdentificationNumber>
+		<nc:IdentificationID>67844</nc:IdentificationID>
+	</cdd-ext:DispositionIdentificationNumber>
+	<cbrn:MessageContentHeader>
+		<cbrn:MessageID>99c2c711-e9bd-4127-a96a-5e403adc496c</cbrn:MessageID>
+		<cbrn:MessageOrigin>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>DOJ_1114300000</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageOrigin>
+		<cbrn:MessageDestination>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>SCC_1100000000</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageDestination>
+		<cbrn:MessageCreationDateTime>2015-07-01T11:51:04.409-07:00</cbrn:MessageCreationDateTime>
+	</cbrn:MessageContentHeader>
+</ccdd:CorrectedChargeDispositionDocument>

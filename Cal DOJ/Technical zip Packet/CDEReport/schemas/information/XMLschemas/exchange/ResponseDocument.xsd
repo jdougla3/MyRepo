@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 (x64) (http://www.altova.com) by Gary Gurbhej (Judicial Council of California) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" xmlns:cdmr="https://isb.srv.courts-tc.ca.gov/CADRIP/ResponseDocument" xmlns:n1="http://release.niem.gov/niem/niem-core/3.0/" targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ResponseDocument" version="1">
+	<xs:import namespace="http://release.niem.gov/niem/niem-core/3.0/" schemaLocation="../subset/niem/niem-core/3.0/niem-core.xsd"/>
+	<xs:element name="ResponseDocument" type="nc:StatusType">
+		<xs:annotation>
+			<xs:documentation>Root element for Response Document, StatusText can have 100 and Status Description Text as Success. Status Text other than 100 leads to failure in Processing</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2014 (x64) (http://www.altova.com) by Gary Gurbhej 
+	(Judicial Council of California) -->
+<wsdl:definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:ccdd="https://isb.srv.courts-tc.ca.gov/CADRIP/CorrectedChargeDispositionDocument"
+	xmlns:icdd="https://isb.srv.courts-tc.ca.gov/CADRIP/InitialChargeDispositionDocument"
+	xmlns:scdd="https://isb.srv.courts-tc.ca.gov/CADRIP/SubsequentChargeDispositionDocument"
+	xmlns:cdmr="https://isb.srv.courts-tc.ca.gov/CADRIP/ResponseDocument"
+	xmlns:cdrecords="https://isb.srv.courts-tc.ca.gov/CADRIP/1.0/CDRecordS"
+	targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/1.0/CDRecordS"
+	xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+	xmlns:ns="http://schemas.xmlsoap.org/soap/encoding/">
+	<wsdl:import namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/1.0/ws-policy"
+		location="CADRIP_Policy.wsdl" /> <!-- Please use OASIS UserName Token policy 1.0-->
+	<wsdl:types>
+		<xsd:schema>
+			<xsd:import
+				namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/CorrectedChargeDispositionDocument"
+				schemaLocation="../information/XMLschemas/exchange/CorrectedChargeDispositionDocument.xsd" />
+			<xsd:import
+				namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/InitialChargeDispositionDocument"
+				schemaLocation="../information/XMLschemas/exchange/InitialChargeDispositionDocument.xsd" />
+			<xsd:import
+				namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/SubsequentChargeDispositionDocument"
+				schemaLocation="../information/XMLschemas/exchange/SubsequentChargeDispositionDocument.xsd" />
+			<xsd:import
+				namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ResponseDocument"
+				schemaLocation="../information/XMLschemas/exchange/ResponseDocument.xsd" />
+		</xsd:schema>
+
+	</wsdl:types>
+	<wsdl:message name="CorrectedChargeDispositionMessage">
+		<wsdl:part name="CorrectedChargeDispositionDocument"
+			element="ccdd:CorrectedChargeDispositionDocument" />
+	</wsdl:message>
+	<wsdl:message name="InitialChargeDispositionMessage">
+		<wsdl:part name="InitialChargeDispositionDocument" element="icdd:InitialChargeDispositionDocument" />
+	</wsdl:message>
+	<wsdl:message name="SubsequentChargeDispositionMessage">
+		<wsdl:part name="SubsequentChargeDispositionDocument"
+			element="scdd:SubsequentChargeDispositionDocument" />
+	</wsdl:message>
+	<wsdl:message name="ChargeDispositionResponseMessage">
+		<wsdl:part name="ChargeDispositionResponseDocument" element="cdmr:ResponseDocument" />
+	</wsdl:message>
+
+	<wsdl:portType name="ChargeDispositionRecordingServiceInterface">
+		<wsdl:operation name="RecordCorrectedChargeDisposition">
+			<wsdl:input name="CorrectedChargeDispositionMessage"
+				message="cdrecords:CorrectedChargeDispositionMessage" />
+			<wsdl:output name="CorrectedChargeDispositionMessageResponse"
+				message="cdrecords:ChargeDispositionResponseMessage">
+			</wsdl:output>
+
+		</wsdl:operation>
+		<wsdl:operation name="RecordInitialChargeDisposition">
+			<wsdl:input name="InitialChargeDispositionMessage"
+				message="cdrecords:InitialChargeDispositionMessage" />
+			<wsdl:output name="InitialChargeDispositionMessageResponse"
+				message="cdrecords:ChargeDispositionResponseMessage">
+			</wsdl:output>
+
+		</wsdl:operation>
+		<wsdl:operation name="RecordSubsequentChargeDisposition">
+			<wsdl:input name="SubsequentChargeDispositionMessage"
+				message="cdrecords:SubsequentChargeDispositionMessage" />
+			<wsdl:output name="SubsequentChargeDispositionMessageResponse"
+				message="cdrecords:ChargeDispositionResponseMessage">
+			</wsdl:output>
+
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ChargeDispositionRecordingServiceSOAPBinding"
+		type="cdrecords:ChargeDispositionRecordingServiceInterface">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<!--<wsaw:UsingAddressing wsdl:required="true" />
+		<wsp:PolicyReference URI="#wss-policy" />-->
+		<wsdl:operation name="RecordCorrectedChargeDisposition">
+			<soap:operation soapAction="RecordCorrectedChargeDisposition"
+				style="document" />
+			<wsdl:input name="CorrectedChargeDispositionMessage">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="CorrectedChargeDispositionMessageResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+
+		</wsdl:operation>
+		<wsdl:operation name="RecordInitialChargeDisposition">
+			<soap:operation soapAction="RecordInitialChargeDisposition"
+				style="document" />
+			<wsdl:input name="InitialChargeDispositionMessage">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="InitialChargeDispositionMessageResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+
+		</wsdl:operation>
+		<wsdl:operation name="RecordSubsequentChargeDisposition">
+			<soap:operation soapAction="RecordSubsequentChargeDisposition"
+				style="document" />
+			<wsdl:input name="SubsequentChargeDispositionMessage">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="SubsequentChargeDispositionMessageResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+
+
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ChargeDispositionRecordingService">
+		<wsdl:port name="ChargeDispositionRecordingServicePort"
+			binding="cdrecords:ChargeDispositionRecordingServiceSOAPBinding">
+			<soap:address location="http://example/ChargeDispositionRecordingService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

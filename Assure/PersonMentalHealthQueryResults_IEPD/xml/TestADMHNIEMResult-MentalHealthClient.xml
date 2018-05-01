@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<exchange:PersonMentalHealthQueryResults
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/5.0/"
+	xmlns:ncic="http://release.niem.gov/niem/codes/fbi_ncic/3.0/"
+	xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+	xmlns:cyfs="http://release.niem.gov/niem/domains/cyfs/3.0/" xmlns:usps="http://release.niem.gov/niem/codes/usps_states/3.0/"
+	xmlns:ext="http://al.gov/IEPD/Extensions/PersonMentalHealthQueryResults/1.0"
+	xmlns:ndex="http://release.niem.gov/niem/codes/fbi_ndex/3.0/"
+	xmlns:exchange="http://al.gov/IEPD/Exchange/PersonMentalHealthQueryResults/1.0"
+	xsi:schemaLocation="http://al.gov/IEPD/Exchange/PersonMentalHealthQueryResults/1.0 ../xsd/exchange_schema.xsd ">
+	<!-- Mental Health Treatment Client -->
+	<ext:Client>
+		<nc:PersonBirthDate>
+			<nc:DateTime>2001-12-31T12:00:00</nc:DateTime>
+		</nc:PersonBirthDate>
+		<nc:PersonName>
+			<nc:PersonGivenName>Jane</nc:PersonGivenName>
+			<nc:PersonSurName>Doe</nc:PersonSurName>
+		</nc:PersonName>
+		<nc:PersonRaceText>Race</nc:PersonRaceText>
+		<nc:PersonSexText>Sex</nc:PersonSexText>
+		<nc:PersonSSNIdentification>
+			<nc:IdentificationID>123456789</nc:IdentificationID>
+		</nc:PersonSSNIdentification>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID xsi:type="nc:TextType">000
+			</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<nc:ContactMailingAddress>
+			<nc:AddressFullText>123 10th Ave.</nc:AddressFullText>
+			<nc:LocationCityName>Tuscaloosa</nc:LocationCityName>
+			<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+		</nc:ContactMailingAddress>
+		<ext:AISNumberID>CLIENT</ext:AISNumberID>
+		<j:CaseNumberText>000000</j:CaseNumberText>
+		<cyfs:StudentCurrentEducationGradeLevelText>Associate Degree
+		</cyfs:StudentCurrentEducationGradeLevelText>
+		<ext:ACSISClientClassification>
+			<ext:AdmissionDate>
+				<nc:DateTime>1960-01-01T12:00:00</nc:DateTime>
+			</ext:AdmissionDate>
+			<ext:AdmissionSchoolAttendanceDescriptionText>Associate Degree
+			</ext:AdmissionSchoolAttendanceDescriptionText>
+			<ext:AdmissionClosureDate />
+			<nc:AssessmentScoreText xsi:nil="true" />
+			<j:OffenseSummaryArrestQuantity>0</j:OffenseSummaryArrestQuantity>
+			<cyfs:SchoolAttendanceDescriptionText
+				xsi:nil="true" />
+			<j:EvaluationDiagnosisDescriptionText
+				xsi:nil="true" />
+			<nc:PersonEducationLevelText>Associate Degree
+			</nc:PersonEducationLevelText>
+			<nc:EmploymentStatus>
+				<nc:StatusDescriptionText>Full-time</nc:StatusDescriptionText>
+			</nc:EmploymentStatus>
+			<ext:GuardianshipCodeText>None</ext:GuardianshipCodeText>
+			<ext:HearingStatus>
+				<nc:StatusDescriptionText>Hearing</nc:StatusDescriptionText>
+			</ext:HearingStatus>
+			<nc:PersonPrimaryLanguage>
+				<nc:LanguageName>Not of Hispanic Origin</nc:LanguageName>
+			</nc:PersonPrimaryLanguage>
+			<j:MonthlyIncomeTotalAmount>
+				<nc:Amount>0</nc:Amount>
+			</j:MonthlyIncomeTotalAmount>
+			<ext:LastUpdated>
+				<nc:DateTime>1971-05-05T12:00:00</nc:DateTime>
+			</ext:LastUpdated>
+			<ext:LegalStatus>
+				<nc:StatusDescriptionText>Voluntary</nc:StatusDescriptionText>
+			</ext:LegalStatus>
+			<cyfs:MaritalStatusCategoryText>Legally Married
+			</cyfs:MaritalStatusCategoryText>
+			<ext:MedicaidNumber>000000000000</ext:MedicaidNumber>
+			<ext:ResidentialArrangementCodeText>Resides with Family
+			</ext:ResidentialArrangementCodeText>
+			<ext:SMISEDStatusCodeText>SMI</ext:SMISEDStatusCodeText>
+			<j:SanctionDaysSuspendedQuantity
+				xsi:nil="true" />
+			<j:Term>
+				<nc:ActivityDate>
+					<nc:DateTime>1971-05-05T12:00:00</nc:DateTime>
+				</nc:ActivityDate>
+				<nc:ActivityStatus>
+					<nc:StatusDescriptionText>Discharged - referral made
+					</nc:StatusDescriptionText>
+				</nc:ActivityStatus>
+			</j:Term>
+			<ext:VeteranStatus>
+				<nc:StatusDescriptionText>Not a veteran</nc:StatusDescriptionText>
+			</ext:VeteranStatus>
+		</ext:ACSISClientClassification>
+	</ext:Client>
+	<ext:ACSISClientActivity>
+		<nc:DocumentFileControlID xsi:nil="true" />
+		<ext:TreatmentDiagnosis>
+			<ext:DiagnosisName>Axis1Diag1</ext:DiagnosisName>
+			<ext:DiagnosisCodeText>304.00</ext:DiagnosisCodeText>
+			<ext:DiagnosisDescriptionText>Opioid Dependence
+			</ext:DiagnosisDescriptionText>
+		</ext:TreatmentDiagnosis>
+		<ext:TreatmentDiagnosis>
+			<ext:DiagnosisName>Axis1Diag2</ext:DiagnosisName>
+			<ext:DiagnosisCodeText>290.40</ext:DiagnosisCodeText>
+			<ext:DiagnosisDescriptionText>Vascular Dementia, Uncomp
+			</ext:DiagnosisDescriptionText>
+		</ext:TreatmentDiagnosis>
+		<ext:TreatmentDiagnosis>
+			<ext:DiagnosisName>Axis2Diag1</ext:DiagnosisName>
+			<ext:DiagnosisCodeText>300.01</ext:DiagnosisCodeText>
+			<ext:DiagnosisDescriptionText>Schizophrenia, Catatonic
+			</ext:DiagnosisDescriptionText>
+		</ext:TreatmentDiagnosis>
+		<ext:TreatmentDiagnosis>
+			<ext:DiagnosisName>Diag1</ext:DiagnosisName>
+			<ext:DiagnosisCodeText>A0100</ext:DiagnosisCodeText>
+			<ext:DiagnosisDescriptionText>Typhoid fever, unspecified
+			</ext:DiagnosisDescriptionText>
+		</ext:TreatmentDiagnosis>
+		<nc:PersonOtherIdentification xsi:nil="true" />
+	</ext:ACSISClientActivity>
+	<ext:MentalHealthCommitment>
+		<nc:ActivityDate>
+			<nc:DateTime>2001-12-31T12:00:00</nc:DateTime>
+		</nc:ActivityDate>
+		<ext:CommitmentPerson>
+			<nc:PersonSSNIdentification>
+				<nc:IdentificationID>123456789</nc:IdentificationID>
+			</nc:PersonSSNIdentification>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>ORGID</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>Provider ID
+				</nc:IdentificationCategoryDescriptionText>
+			</nc:OrganizationIdentification>
+			<ext:AISNumberID>CLIENT</ext:AISNumberID>
+		</ext:CommitmentPerson>
+		<ext:CommitmentRelease>
+			<nc:ActivityDate>
+				<nc:DateTime>2001-12-31T12:00:00</nc:DateTime>
+			</nc:ActivityDate>
+		</ext:CommitmentRelease>
+		<ext:CommitmentPlacementDescriptionText>Placement Description</ext:CommitmentPlacementDescriptionText>
+	</ext:MentalHealthCommitment>
+	<ext:MentalHealthTreatmentDischarge>
+		<ext:DischargePerson>
+			<nc:PersonSSNIdentification>
+				<nc:IdentificationID>123456789</nc:IdentificationID>
+			</nc:PersonSSNIdentification>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>ORGID</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>Provider ID
+				</nc:IdentificationCategoryDescriptionText>
+			</nc:OrganizationIdentification>
+			<ext:AISNumberID>CLIENT</ext:AISNumberID>
+			<ext:ACSISClientClassification>
+				<j:Term>
+					<nc:ActivityDate>
+						<nc:DateTime>1971-05-05T12:00:00</nc:DateTime>
+					</nc:ActivityDate>
+					<nc:ActivityStatus>
+						<nc:StatusDescriptionText>TREASON
+						</nc:StatusDescriptionText>
+					</nc:ActivityStatus>
+				</j:Term>
+			</ext:ACSISClientClassification>
+		</ext:DischargePerson>
+	</ext:MentalHealthTreatmentDischarge>
+</exchange:PersonMentalHealthQueryResults>

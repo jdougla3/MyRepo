@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema targetNamespace="http://release.niem.gov/niem/domains/cbrn/4.0/" version="1" xsi:schemaLocation="http://release.niem.gov/niem/appinfo/4.0/ ../../../utility/appinfo/4.0/appinfo.xsd http://release.niem.gov/niem/conformanceTargets/3.0/ ../../../utility/conformanceTargets/3.0/conformanceTargets.xsd" ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument" xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.0/" xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/">
+  <xs:annotation>
+    <xs:documentation>Chemical, Biological, Radiological, and Nuclear Domain</xs:documentation>
+  </xs:annotation>
+  <xs:import schemaLocation="../../../niem-core/4.0/niem-core.xsd" namespace="http://release.niem.gov/niem/niem-core/4.0/"/>
+  <xs:import schemaLocation="../../../proxy/xsd/4.0/xs.xsd" namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"/>
+  <xs:import schemaLocation="../../../utility/structures/4.0/structures.xsd" namespace="http://release.niem.gov/niem/structures/4.0/"/>
+  <xs:complexType name="ContentHeaderType">
+    <xs:annotation>
+      <xs:documentation>A data type for information about the contents of a message.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="cbrn:RemarksComplexObjectType">
+        <xs:sequence>
+          <xs:element ref="cbrn:MessageID" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element ref="cbrn:MessageOrigin" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element ref="cbrn:MessageDestination" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element ref="cbrn:MessageCreationDateTime" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MessageOriginOrDestinationType">
+    <xs:annotation>
+      <xs:documentation>A data type for identifying a message origin or destination.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="structures:ObjectType">
+        <xs:sequence>
+          <xs:element ref="nc:OrganizationIdentification" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RemarksComplexObjectType">
+    <xs:annotation>
+      <xs:documentation>A data type providing a Remark via inheritance to applicable Types.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="structures:ObjectType"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MessageContentHeader" type="cbrn:ContentHeaderType" nillable="true">
+    <xs:annotation>
+      <xs:documentation>A set of common payload header information for a  N25 message. This is independent of a specific transmission protocol that may be used to wrap the payload.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="MessageCreationDateTime" type="niem-xs:dateTime" nillable="true">
+    <xs:annotation>
+      <xs:documentation>A timestamp associated with the creation of a message content header.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="MessageDestination" type="cbrn:MessageOriginOrDestinationType" nillable="true">
+    <xs:annotation>
+      <xs:documentation>An identifier and/or name of a facility, site, or organization(s) that is(are) the destination of a message.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="MessageID" type="niem-xs:string" nillable="true">
+    <xs:annotation>
+      <xs:documentation>An identifier associated with a message content.  There is no required format for the ID value.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="MessageOrigin" type="cbrn:MessageOriginOrDestinationType" nillable="true">
+    <xs:annotation>
+      <xs:documentation>A Facility, site, or organization id and/or name from which a message content originated.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

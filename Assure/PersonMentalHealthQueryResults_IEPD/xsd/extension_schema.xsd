@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
+	xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+	xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/3.0/" xmlns:ncic="http://release.niem.gov/niem/codes/fbi_ncic/3.0/"
+	xmlns:j="http://release.niem.gov/niem/domains/jxdm/5.0/" xmlns:ndex="http://release.niem.gov/niem/codes/fbi_ndex/3.0/"
+	xmlns:cyfs="http://release.niem.gov/niem/domains/cyfs/3.0/"
+	xmlns:ext="http://al.gov/IEPD/Extensions/PersonMentalHealthQueryResults/1.0"
+	targetNamespace="http://al.gov/IEPD/Extensions/PersonMentalHealthQueryResults/1.0"
+	elementFormDefault="qualified">
+	<xsd:import namespace="http://release.niem.gov/niem/niem-core/3.0/"
+		schemaLocation="Subset/niem/niem-core/3.0/niem-core.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/structures/3.0/"
+		schemaLocation="Subset/niem/structures/3.0/structures.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/codes/fbi_ncic/3.0/"
+		schemaLocation="Subset/niem/codes/fbi_ncic/3.0/fbi_ncic.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/domains/jxdm/5.0/"
+		schemaLocation="Subset/niem/domains/jxdm/5.0/jxdm.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/codes/fbi_ndex/3.0/"
+		schemaLocation="Subset/niem/codes/fbi_ndex/3.0/fbi_ndex.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/domains/cyfs/3.0/"
+		schemaLocation="Subset/niem/domains/cyfs/3.0/cyfs.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/proxy/xsd/3.0/"
+		schemaLocation="Subset/niem/proxy/xsd/3.0/xs.xsd" />
+	<!-- Extension schema for the person treatment query results -->
+	<!-- Root Element Data Type -->
+	<xsd:complexType name="PersonMentalHealthQueryResultsType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for a message for the person treatment
+				and supervision query response.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="structures:ObjectType">
+				<xsd:sequence>
+					<xsd:element ref="ext:ReportingOrganization" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:Client" minOccurs="1" maxOccurs="unbounded" />
+					<xsd:element ref="ext:ACSISClientActivity" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:ASAISClientActivity" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:MentalHealthCommitment"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:MentalHealthTreatmentDischarge"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:SubstanceAbuseTreatmentDischarge"
+						minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Data Types -->
+	<xsd:complexType name="ReportingOrganizationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for information related to the
+				reporting organization.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:OrganizationType">
+				<xsd:sequence>
+					<xsd:element ref="ext:ContactInformation" minOccurs="0"
+						maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ContactInformationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for information related to the contact
+				information.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:AddressType">
+				<xsd:sequence>
+					<xsd:element ref="nc:ContactName" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="nc:ContactTelephoneNumber" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="nc:ContactEmailID" minOccurs="0"
+						maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ClientType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for information that provides client
+				person information.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:PersonType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationIdentification"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="nc:ContactMailingAddress" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:ContactInformation" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:AISNumberID" minOccurs="0" />
+					<xsd:element ref="j:CaseNumberText" minOccurs="0" />
+					<xsd:element ref="cyfs:StudentCurrentEducationGradeLevelText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:ACSISClientClassification"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:ASAISClientClassification"
+						minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ClientClassificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for information related to the
+				client's Classification.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:DocumentType">
+				<xsd:sequence>
+					<xsd:element ref="ext:AdmissionDate" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:AdmissionSchoolAttendanceDescriptionText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:AdmissionClosureDate" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="nc:AssessmentScoreText" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="j:OffenseSummaryArrestQuantity"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="cyfs:SchoolAttendanceDescriptionText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="j:EvaluationDiagnosisDescriptionText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="nc:PersonEducationLevelText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="nc:EmploymentStatus" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:GuardianshipCodeText" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:HearingStatus" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="nc:PersonPrimaryLanguage" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="j:MonthlyIncomeTotalAmount"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:LastUpdated" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:LegalStatus" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="cyfs:MaritalStatusCategoryText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:MedicaidNumber" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:ResidentialArrangementCodeText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:SMISEDStatusCodeText" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="j:SanctionDaysSuspendedQuantity"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="j:Term" minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:AnnualUpdateDate" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:VeteranStatus" minOccurs="0"
+						maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ClientActivityType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for information related to the
+				client's activity and treatment events.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:ActivityType">
+				<xsd:sequence>
+					<xsd:element ref="nc:DocumentFileControlID" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:ServiceDate" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:FiscalYear" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:TreatmentDiagnosis" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:DMHServiceActivityCodeText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="nc:PersonOtherIdentification"
+						minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="TreatmentDiagnosisType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for describing a treatment event.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:ActivityType">
+				<xsd:sequence>
+					<xsd:element ref="ext:DiagnosisName" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:DiagnosisCodeText" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:DiagnosisDescriptionText"
+						minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="ext:DiagnosisCategoryText" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:DiagnosisFrequency" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:DiagnosisRoute" minOccurs="0"
+						maxOccurs="unbounded" />
+					<xsd:element ref="ext:DiagnosisFirstAge" minOccurs="0"
+						maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CommitmentType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for involuntary or civil commitment of
+				a person who is deemed by a qualified agent to have symptoms of
+				severe mental disorder and is court-ordered into inpatient hospital
+				treatment..
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:ActivityType">
+				<xsd:sequence>
+					<xsd:element ref="ext:CommitmentPerson" minOccurs="0"
+						maxOccurs="1" />
+					<xsd:element ref="ext:CommitmentRelease" minOccurs="0"
+						maxOccurs="1" />
+					<xsd:element ref="ext:CommitmentPlacementDescriptionText"
+						minOccurs="0" maxOccurs="1" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MentalHealthTreatmentDischargeType">
+		<xsd:annotation>
+			<xsd:documentation>A type for the action of discharging someone from
+				mental health treatment.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:ActivityType">
+				<xsd:sequence>
+					<xsd:element ref="ext:DischargePerson" minOccurs="0"
+						maxOccurs="1" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubstanceAbuseTreatmentDischargeType">
+		<xsd:annotation>
+			<xsd:documentation>A type for the action of discharging someone from
+				substance abuse treatment.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:ActivityType">
+				<xsd:sequence>
+					<xsd:element ref="ext:DischargePerson" minOccurs="0"
+						maxOccurs="1" />
+					<xsd:element ref="ext:DischargeDiagnosis" minOccurs="0"
+						maxOccurs="1" />
+					<xsd:element ref="ext:DischargeDiagnosisDetail"
+						minOccurs="0" maxOccurs="1" />
+					<xsd:element ref="ext:DischargeDiagnosisFrequency"
+						minOccurs="0" maxOccurs="1" />
+					<xsd:element ref="ext:LevelOfCare" minOccurs="0"
+						maxOccurs="1" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Elements -->
+	<xsd:element name="Client" type="ext:ClientType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a treatment and
+				supervision client.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ContactInformation" type="ext:ContactInformationType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe contact informaotion
+				because I cannot get the nc:ContactInformationAssocitaion to work.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ReportingOrganization" type="ext:ReportingOrganizationType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe an organization.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TreatmentDiagnosis" type="ext:TreatmentDiagnosisType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a treatment
+				diagnosis.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DiagnosisName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a diagnosis name.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DiagnosisCodeText" type="niem-xs:string">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a diagnosis code.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DiagnosisDescriptionText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a diagnosis.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DiagnosisCategoryText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Diagnosis type code.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DiagnosisFrequency" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Diagnosis frequency code.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DiagnosisRoute" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Diagnosis route code.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DiagnosisFirstAge" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Diagnosis first age code.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ACSISClientClassification" type="ext:ClientClassificationType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a clients ACSIS
+				Classification responses.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ASAISClientClassification" type="ext:ClientClassificationType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a clients ASAIS
+				Classification responses.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ACSISClientActivity" type="ext:ClientActivityType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a clients ACSIS
+				activity including treatment events.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ASAISClientActivity" type="ext:ClientActivityType">
+		<xsd:annotation>
+			<xsd:documentation>A complex element to describe a clients ASAIS
+				activity including treatment events.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AISNumberID" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Alabama Treatment and Supervision Identification
+				Number.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AdmissionDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Date of client admission and classification
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AdmissionSchoolAttendanceDescriptionText"
+		type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>School admission and classification
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AdmissionClosureDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Date of admission and classification closure of
+				case
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="GuardianshipCodeText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>client guardian relationship code from ACSIS
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="HearingStatus" type="nc:StatusType">
+		<xsd:annotation>
+			<xsd:documentation>status of classification hearing
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastUpdated" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Date of client admission and classification update
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LegalStatus" type="nc:StatusType">
+		<xsd:annotation>
+			<xsd:documentation>client legal status
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicaidNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>client medicaid number
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResidentialArrangementCodeText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>client living accommidations
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SMISEDStatusCodeText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>SMI/SED Status - code from ACSIS
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AnnualUpdateDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>date classification needs to be updated (anually)
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="VeteranStatus" type="nc:StatusType">
+		<xsd:annotation>
+			<xsd:documentation>veteran status of client
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ServiceDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>ACSIS client activity service date
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FiscalYear" type="niem-xs:gYear">
+		<xsd:annotation>
+			<xsd:documentation>ACSIS client activity fiscal year
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DMHServiceActivityCodeText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>ACSIS client activity department of mental health
+				services activity code
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="VeteranIndicator" type="niem-xs:boolean">
+		<xsd:annotation>
+			<xsd:documentation>Indicates if a person served in the military
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MentalHealthCommitment" type="ext:CommitmentType">
+		<xsd:annotation>
+			<xsd:documentation>Involuntary or civil commitment of a person who is
+				deemed by a qualified agent to have symptoms of severe mental
+				disorder and is court-ordered into inpatient hospital treatment.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CommitmentRelease" type="nc:ReleaseType">
+		<xsd:annotation>
+			<xsd:documentation>A release of a subject from a commitment.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CommitmentPlacementDescriptionText"
+		type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A description of the placement of a subject who
+				has been committed.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MentalHealthTreatmentDischarge" type="ext:MentalHealthTreatmentDischargeType">
+		<xsd:annotation>
+			<xsd:documentation>An act of discharging a subject from mental health
+				treatment.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SubstanceAbuseTreatmentDischarge"
+		type="ext:SubstanceAbuseTreatmentDischargeType">
+		<xsd:annotation>
+			<xsd:documentation>An act of discharging a subject from substance
+				abuse treatment.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DischargePerson" type="ext:ClientType">
+		<xsd:annotation>
+			<xsd:documentation>A person who has been discharged from treatment.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CommitmentPerson" type="ext:ClientType">
+		<xsd:annotation>
+			<xsd:documentation>A person who has been committed for treatment.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DischargeDiagnosis" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Discharge diagnosis.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DischargeDiagnosisDetail" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Discharge diagnosis detail.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DischargeDiagnosisFrequency" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Discharge diagnosis frequency.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LevelOfCare" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Level of care.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

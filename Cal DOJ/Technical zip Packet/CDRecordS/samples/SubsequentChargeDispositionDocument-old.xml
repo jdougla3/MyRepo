@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns7:SubsequentChargeDispositionDocument xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:cdd-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionDocumentExtension" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:ns5="http://release.niem.gov/niem/structures/3.0/" xmlns:ns6="http://release.niem.gov/niem/domains/cbrn/3.0/" xmlns:ns7="https://isb.srv.courts-tc.ca.gov/CADRIP/SubsequentChargeDispositionDocument" xmlns:p="https://isb.srv.courts-tc.ca.gov/CADRIP/InitialChargeDispositionDocument" xmlns:ns9="https://isb.srv.courts-tc.ca.gov/CADRIP/CorrectedChargeDispositionDocument" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cdd-ext:StepOne>
+        <cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+        <cdd-ext:CountyCodeRecordSegmentNumber>39000099</cdd-ext:CountyCodeRecordSegmentNumber>
+        <cdd-ext:EventSequenceNumber>001</cdd-ext:EventSequenceNumber>
+        <cdd-ext:DispositionSubject>
+            <nc:PersonAgeMeasure xsi:nil="true"/>
+            <nc:PersonAlternateName xsi:nil="true"/>
+            <nc:PersonBirthDate>
+                <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">1988-04-02</nc:Date>
+            </nc:PersonBirthDate>
+            <nc:PersonEyeColorText>BRO</nc:PersonEyeColorText>
+            <nc:PersonHairColorText>BLK</nc:PersonHairColorText>
+            <nc:PersonHeightMeasure>
+                <nc:MeasureText>504</nc:MeasureText>
+            </nc:PersonHeightMeasure>
+            <nc:PersonName>
+                <nc:PersonFullName>BEAR,PETER MARS</nc:PersonFullName>
+            </nc:PersonName>
+            <nc:PersonOtherIdentification xsi:nil="true"/>
+            <nc:PersonRaceText>B</nc:PersonRaceText>
+            <nc:PersonSexText>M</nc:PersonSexText>
+            <nc:PersonSSNIdentification xsi:nil="true"/>
+            <nc:PersonWeightMeasure>
+                <nc:MeasureText>130</nc:MeasureText>
+            </nc:PersonWeightMeasure>
+            <cdd-ext:CourtTrueName>
+                <nc:PersonFullName>PAN,MICKY VENUS</nc:PersonFullName>
+            </cdd-ext:CourtTrueName>
+            <j:PersonAugmentation>
+                <nc:DriverLicense>
+                    <nc:DriverLicenseIdentification>
+                        <nc:IdentificationID>A3096973</nc:IdentificationID>
+                    </nc:DriverLicenseIdentification>
+                </nc:DriverLicense>
+                <j:PersonFBIIdentification xsi:nil="true"/>
+            </j:PersonAugmentation>
+        </cdd-ext:DispositionSubject>
+        <cdd-ext:ArrestDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2011-07-05</nc:Date>
+        </cdd-ext:ArrestDate>
+        <j:ArrestAgency>
+            <nc:OrganizationName>390000</nc:OrganizationName>
+            <nc:OrganizationOtherIdentification xsi:nil="true"/>
+        </j:ArrestAgency>
+        <j:ArrestAgencyRecordIdentification>
+            <nc:IdentificationID>SO 1112479 00</nc:IdentificationID>
+        </j:ArrestAgencyRecordIdentification>
+        <j:BookingAgency>
+            <nc:OrganizationName>390000</nc:OrganizationName>
+            <nc:OrganizationOtherIdentification xsi:nil="true"/>
+        </j:BookingAgency>
+        <j:BookingAgencyRecordIdentification>
+            <nc:IdentificationID>SO 1112479 00</nc:IdentificationID>
+        </j:BookingAgencyRecordIdentification>
+    </cdd-ext:StepOne>
+    <cdd-ext:StepTwo>
+        <cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+        <cdd-ext:CountyCodeRecordSegmentNumber>39000099</cdd-ext:CountyCodeRecordSegmentNumber>
+        <cdd-ext:EventSequenceNumber>002</cdd-ext:EventSequenceNumber>
+        <cdd-ext:DispositionEventCodeText>A</cdd-ext:DispositionEventCodeText>
+        <j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+        <j:StatuteCodeIdentification>
+            <nc:IdentificationID>PC</nc:IdentificationID>
+        </j:StatuteCodeIdentification>
+        <j:StatuteCodeSectionIdentification>
+            <nc:IdentificationID>266I</nc:IdentificationID>
+        </j:StatuteCodeSectionIdentification>
+        <j:StatuteDescriptionText>PANDERING</j:StatuteDescriptionText>
+        <j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+        <j:StatuteLevelText xsi:nil="true"/>
+        <nc:ReleaseRecipient xsi:nil="true"/>
+        <cdd-ext:ReasonForNonFilingCodeText>G</cdd-ext:ReasonForNonFilingCodeText>
+        <cdd-ext:OriginalCourt>
+            <nc:OrganizationName xsi:nil="true"/>
+            <nc:OrganizationOtherIdentification xsi:nil="true"/>
+            <nc:CaseDocketID xsi:nil="true"/>
+        </cdd-ext:OriginalCourt>
+    </cdd-ext:StepTwo>
+    <cdd-ext:StepTwo>
+        <cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+        <cdd-ext:CountyCodeRecordSegmentNumber>39000099</cdd-ext:CountyCodeRecordSegmentNumber>
+        <cdd-ext:EventSequenceNumber>003</cdd-ext:EventSequenceNumber>
+        <cdd-ext:DispositionEventCodeText>A</cdd-ext:DispositionEventCodeText>
+        <j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+        <j:StatuteCodeIdentification>
+            <nc:IdentificationID>PC</nc:IdentificationID>
+        </j:StatuteCodeIdentification>
+        <j:StatuteCodeSectionIdentification>
+            <nc:IdentificationID>266H</nc:IdentificationID>
+        </j:StatuteCodeSectionIdentification>
+        <j:StatuteDescriptionText>PIMPING</j:StatuteDescriptionText>
+        <j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+        <j:StatuteLevelText xsi:nil="true"/>
+        <nc:ReleaseRecipient xsi:nil="true"/>
+        <cdd-ext:ReasonForNonFilingCodeText>G</cdd-ext:ReasonForNonFilingCodeText>
+        <cdd-ext:OriginalCourt>
+            <nc:OrganizationName xsi:nil="true"/>
+            <nc:OrganizationOtherIdentification xsi:nil="true"/>
+            <nc:CaseDocketID xsi:nil="true"/>
+        </cdd-ext:OriginalCourt>
+    </cdd-ext:StepTwo>
+    <cdd-ext:StepFour>
+        <cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+        <cdd-ext:CountyCodeRecordSegmentNumber>39000099</cdd-ext:CountyCodeRecordSegmentNumber>
+        <cdd-ext:EventSequenceNumber>004</cdd-ext:EventSequenceNumber>
+        <cdd-ext:CourtFilingDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2011-07-07</nc:Date>
+        </cdd-ext:CourtFilingDate>
+        <cdd-ext:JudicialDistrictNumber>39460</cdd-ext:JudicialDistrictNumber>
+        <nc:CaseDocketID>SF117891A</nc:CaseDocketID>
+        <j:PleaDescriptionText xsi:nil="true"/>
+        <j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+        <j:StatuteCodeIdentification>
+            <nc:IdentificationID>PC</nc:IdentificationID>
+        </j:StatuteCodeIdentification>
+        <j:StatuteCodeSectionIdentification>
+            <nc:IdentificationID>266I</nc:IdentificationID>
+        </j:StatuteCodeSectionIdentification>
+        <j:StatuteDescriptionText>PANDERING</j:StatuteDescriptionText>
+        <j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+        <j:StatuteLevelText xsi:nil="true"/>
+        <cdd-ext:CaseProceedingSuspendedDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2011-10-26</nc:Date>
+        </cdd-ext:CaseProceedingSuspendedDate>
+        <nc:DispositionCategoryText>DISM</nc:DispositionCategoryText>
+        <cdd-ext:DismissedReasonCodeText>A</cdd-ext:DismissedReasonCodeText>
+    </cdd-ext:StepFour>
+    <cdd-ext:StepFour>
+        <cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+        <cdd-ext:CountyCodeRecordSegmentNumber>39000099</cdd-ext:CountyCodeRecordSegmentNumber>
+        <cdd-ext:EventSequenceNumber>005</cdd-ext:EventSequenceNumber>
+        <cdd-ext:CourtFilingDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2011-07-07</nc:Date>
+        </cdd-ext:CourtFilingDate>
+        <cdd-ext:JudicialDistrictNumber>39460</cdd-ext:JudicialDistrictNumber>
+        <nc:CaseDocketID>SF117891A</nc:CaseDocketID>
+        <j:PleaDescriptionText xsi:nil="true"/>
+        <j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+        <j:StatuteCodeIdentification>
+            <nc:IdentificationID>PC</nc:IdentificationID>
+        </j:StatuteCodeIdentification>
+        <j:StatuteCodeSectionIdentification>
+            <nc:IdentificationID>653.22(A)</nc:IdentificationID>
+        </j:StatuteCodeSectionIdentification>
+        <j:StatuteDescriptionText>LOITERING TO COMMIT PROSTITUTION</j:StatuteDescriptionText>
+        <j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+        <cdd-ext:CourtDisposedChargeType>M</cdd-ext:CourtDisposedChargeType>
+        <j:StatuteLevelText xsi:nil="true"/>
+        <cdd-ext:CaseProceedingSuspendedDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2011-10-26</nc:Date>
+        </cdd-ext:CaseProceedingSuspendedDate>
+        <nc:DispositionCategoryText>CONV</nc:DispositionCategoryText>
+    </cdd-ext:StepFour>
+    <cdd-ext:StepFour>
+        <cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+        <cdd-ext:CountyCodeRecordSegmentNumber>39000099</cdd-ext:CountyCodeRecordSegmentNumber>
+        <cdd-ext:EventSequenceNumber>007</cdd-ext:EventSequenceNumber>
+        <cdd-ext:CourtFilingDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2011-07-07</nc:Date>
+        </cdd-ext:CourtFilingDate>
+        <cdd-ext:JudicialDistrictNumber>39460</cdd-ext:JudicialDistrictNumber>
+        <nc:CaseDocketID>SF117891A</nc:CaseDocketID>
+        <j:PleaDescriptionText xsi:nil="true"/>
+        <j:ChargeCountQuantity>1</j:ChargeCountQuantity>
+        <j:StatuteCodeIdentification>
+            <nc:IdentificationID>PC</nc:IdentificationID>
+        </j:StatuteCodeIdentification>
+        <j:StatuteCodeSectionIdentification>
+            <nc:IdentificationID>653.22(A)</nc:IdentificationID>
+        </j:StatuteCodeSectionIdentification>
+        <j:StatuteDescriptionText>LOITERING TO COMMIT PROSTITUTION</j:StatuteDescriptionText>
+        <j:ChargeCategoryDescriptionText>F</j:ChargeCategoryDescriptionText>
+        <j:StatuteLevelText xsi:nil="true"/>
+        <nc:DispositionCategoryText xsi:nil="true"/>
+        <cdd-ext:SubsequentActionDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2014-11-13</nc:Date>
+        </cdd-ext:SubsequentActionDate>
+        <cdd-ext:DispositionSubsequentActionCodeText>71</cdd-ext:DispositionSubsequentActionCodeText>
+    </cdd-ext:StepFour>
+    <cdd-ext:StepFive>
+        <cdd-ext:DispositionStepNumber>05</cdd-ext:DispositionStepNumber>
+        <cdd-ext:CountyCodeRecordSegmentNumber>39000099</cdd-ext:CountyCodeRecordSegmentNumber>
+        <cdd-ext:EventSequenceNumber>006</cdd-ext:EventSequenceNumber>
+        <cdd-ext:SentenceDate>
+            <nc:Date xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="xsd:date">2011-10-26</nc:Date>
+        </cdd-ext:SentenceDate>
+        <j:SentenceDescriptionText xsi:nil="true"/>
+        <nc:CaseDocketID xsi:nil="true"/>
+        <cdd-ext:Probation>
+            <nc:ActivityIdentification xsi:nil="true"/>
+            <cdd-ext:ProbationCategoryText>C</cdd-ext:ProbationCategoryText>
+            <cdd-ext:ProbationTerm>003YR</cdd-ext:ProbationTerm>
+        </cdd-ext:Probation>
+        <cdd-ext:JailTerm>002DS</cdd-ext:JailTerm>
+        <nc:ObligationDueAmount>10</nc:ObligationDueAmount>
+        <nc:FinancialObligationExemptionAmount>100</nc:FinancialObligationExemptionAmount>
+    </cdd-ext:StepFive>
+    <cdd-ext:DispositionIdentificationNumber>
+        <nc:IdentificationID>67843</nc:IdentificationID>
+    </cdd-ext:DispositionIdentificationNumber>
+    <ns6:MessageContentHeader>
+        <ns6:MessageID>f8c10b39-55d0-4701-a32a-53a7b244c2f2</ns6:MessageID>
+        <ns6:MessageOrigin ns5:id="DOJ_1114300000"/>
+        <ns6:MessageDestination ns5:id="SCC_1100000000"/>
+        <ns6:MessageCreationDateTime>2015-07-01T11:51:04.020-07:00</ns6:MessageCreationDateTime>
+    </ns6:MessageContentHeader>
+</ns7:SubsequentChargeDispositionDocument>

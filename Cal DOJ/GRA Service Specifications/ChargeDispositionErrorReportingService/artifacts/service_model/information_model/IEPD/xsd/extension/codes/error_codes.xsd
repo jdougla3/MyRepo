@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:cdec="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorCodes" xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/"
+	targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorCodes" version="1.0">
+	<xsd:annotation>
+		<xsd:documentation>DOJ Charge Disposition Error Codes</xsd:documentation>
+		<xsd:appinfo>
+			<appinfo:ConformantIndicator>true</appinfo:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://release.niem.gov/niem/appinfo/4.0/" schemaLocation="../../subset/niem/utility/appinfo/4.0/appinfo.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/structures/4.0/" schemaLocation="../../subset/niem/utility/structures/4.0/structures.xsd" />
+	<xsd:simpleType name="AllStepErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that appy to all steps</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="AllStepErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that appy to all steps</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:AllStepErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="structures:SimpleObjectAttributeGroup" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step1CodesCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Personal Descriptor, Booking Errors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step1CodesCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Personal Descriptor, Booking Errors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step1CodesCodeSimpleType">
+				<xsd:attributeGroup ref="structures:SimpleObjectAttributeGroup" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step2ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>ProsecutionErrors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step2ErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>ProsecutionErrors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step2ErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="structures:SimpleObjectAttributeGroup" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step4ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Court Errors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step4ErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Court Errors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step4ErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="structures:SimpleObjectAttributeGroup" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="Step5ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Sentence Errors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Step5ErrorsCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Sentence Errors</xsd:documentation>
+			<xsd:appinfo>
+				<appinfo:Base appinfo:namespace="http://niem.gov/niem/structures/2.0" appinfo:name="Object" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cdec:Step5ErrorsCodeSimpleType">
+				<xsd:attributeGroup ref="structures:SimpleObjectAttributeGroup" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

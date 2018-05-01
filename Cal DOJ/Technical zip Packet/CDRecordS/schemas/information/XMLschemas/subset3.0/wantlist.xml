@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:WantList w:release="3.0-with-domain-updates" w:product="NIEM"
+  w:nillableDefault="true" xmlns:w="http://niem.gov/niem/wantlist/2.2" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/3.0/">
+  <w:Element w:name="cbrn:MessageContentHeader" w:isReference="false" w:nillable="false"/>
+  <w:Type w:name="cbrn:ContentHeaderType" w:isRequested="false">
+    <w:ElementInType w:name="cbrn:MessageID" w:isReference="false"
+      w:minOccurs="1" w:maxOccurs="1"/>
+    <w:ElementInType w:name="cbrn:MessageOrigin" w:isReference="false"
+      w:minOccurs="1" w:maxOccurs="1"/>
+    <w:ElementInType w:name="cbrn:MessageDestination"
+      w:isReference="false" w:minOccurs="1" w:maxOccurs="1"/>
+    <w:ElementInType w:name="cbrn:MessageCreationDateTime"
+      w:isReference="false" w:minOccurs="0" w:maxOccurs="1"/>
+  </w:Type>
+</w:WantList>

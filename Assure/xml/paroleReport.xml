@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exchange:ParoleReport xmlns:exchange="http://al.gov/IEPD/Exchange/ParoleReport/1.0"
+	xmlns:ext="http://al.gov/IEPD/Extensions/ParoleReport/1.0" xmlns:j="http://release.niem.gov/niem/domains/jxdm/5.0/"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/3.0/"
+	xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://al.gov/IEPD/Exchange/ParoleReport/1.0 ../xsd/exchange_schema.xsd ">
+	<nc:Metadata>
+		<nc:LastUpdatedDate>
+			<nc:Date>2001-01-01</nc:Date>
+		</nc:LastUpdatedDate>
+	</nc:Metadata>
+	<j:Subject>
+		<nc:RoleOfPerson structures:ref="PERS01" />
+		<j:SubjectCorrectionsIdentification>
+			<nc:IdentificationID>Inmate Number</nc:IdentificationID>
+		</j:SubjectCorrectionsIdentification>
+		<ext:SubjectParoleIdentification>
+			<nc:IdentificationID>Parolee Number</nc:IdentificationID>
+		</ext:SubjectParoleIdentification>
+	</j:Subject>
+	<nc:Person structures:id="PERS01">
+		<nc:PersonBirthDate>
+			<nc:Date>2001-01-01</nc:Date>
+		</nc:PersonBirthDate>
+		<nc:PersonName>
+			<nc:PersonGivenName>John</nc:PersonGivenName>
+			<nc:PersonMiddleName>Edward</nc:PersonMiddleName>
+			<nc:PersonSurName>Smith</nc:PersonSurName>
+		</nc:PersonName>
+		<nc:PersonRaceText>Race</nc:PersonRaceText>
+		<nc:PersonSexText>Male</nc:PersonSexText>
+		<nc:PersonSSNIdentification>
+			<nc:IdentificationID>043091221</nc:IdentificationID>
+		</nc:PersonSSNIdentification>
+		<nc:PersonStateIdentification>
+			<nc:IdentificationID>SI456789</nc:IdentificationID>
+		</nc:PersonStateIdentification>
+		<j:PersonAugmentation>
+			<j:PersonFBIIdentification>
+				<nc:IdentificationID>FBI4578</nc:IdentificationID>
+			</j:PersonFBIIdentification>
+		</j:PersonAugmentation>
+	</nc:Person>
+</exchange:ParoleReport>

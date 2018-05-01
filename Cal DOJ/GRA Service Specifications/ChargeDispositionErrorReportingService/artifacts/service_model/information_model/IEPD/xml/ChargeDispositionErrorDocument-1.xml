@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<cded:ChargeDispositionErrorDocument xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:cded-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension"
+	xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.0/"
+	xmlns:cded="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument" xmlns:appinfo="http://niem.gov/niem/appinfo/4.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument ../xsd/exchange/ChargeDispositionErrorDocument.xsd">
+	<cded-ext:ChargeDispositionError>
+		<cded-ext:DispositionControlNumber>L1098410981639000001</cded-ext:DispositionControlNumber>
+		<cded-ext:JudicialDistrictNumber>39451</cded-ext:JudicialDistrictNumber>
+		<cded-ext:CourtFileNumber>MF037523B</cded-ext:CourtFileNumber>
+		<cded-ext:DispositionIdentificationNumber>
+			<nc:IdentificationID>CR2014151S372016</nc:IdentificationID>
+		</cded-ext:DispositionIdentificationNumber>
+		<j:BookingAgency>
+			<nc:OrganizationName>390000</nc:OrganizationName>
+		</j:BookingAgency>
+		<j:ArrestAgency xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+		<cded-ext:ChargeDispositionSubject>
+			<cded-ext:DispositionSubject>
+				<nc:RoleOfPerson>
+					<nc:PersonBirthDate>
+						<nc:Date>1988-08-03</nc:Date>
+					</nc:PersonBirthDate>
+					<nc:PersonName>
+						<nc:PersonGivenName>BILLY</nc:PersonGivenName>
+						<nc:PersonMiddleName>BOB</nc:PersonMiddleName>
+						<nc:PersonSurName>BUBKIN</nc:PersonSurName>
+					</nc:PersonName>
+				</nc:RoleOfPerson>
+			</cded-ext:DispositionSubject>
+		</cded-ext:ChargeDispositionSubject>
+		<cded-ext:DispositionError>
+			<cded-ext:ErrorFieldName>Total Fixed Prison Term</cded-ext:ErrorFieldName>
+			<cded-ext:ErrorContent>F003YR</cded-ext:ErrorContent>
+			<cded-ext:ValidationCheckDetail>Prison and Probation Mutually Exclusive</cded-ext:ValidationCheckDetail>
+			<cded-ext:ErrorMnemonic>PRIS</cded-ext:ErrorMnemonic>
+			<cded-ext:DispositionErrorCode>
+				<cded-ext:SentenceErrors>1479</cded-ext:SentenceErrors>
+			</cded-ext:DispositionErrorCode>
+		</cded-ext:DispositionError>
+	</cded-ext:ChargeDispositionError>
+	<cbrn:MessageContentHeader>
+		<cbrn:MessageID>c9b5810c-f67f-42f7-9bdc-643f4d782a1e</cbrn:MessageID>
+		<cbrn:MessageOrigin>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>SCC_1100000000"</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageOrigin>
+		<cbrn:MessageDestination>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>SJQ_1113900000"</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageDestination>
+		<cbrn:MessageCreationDateTime>2016-04-07T12:21:53.362-07:00</cbrn:MessageCreationDateTime>
+	</cbrn:MessageContentHeader>
+</cded:ChargeDispositionErrorDocument>

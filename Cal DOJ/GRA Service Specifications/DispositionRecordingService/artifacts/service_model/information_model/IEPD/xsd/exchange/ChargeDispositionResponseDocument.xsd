@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:cdrd="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargedispositionResponseDocument"
+	targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionResponseDocument" version="1">
+	<xsd:annotation>
+		<xsd:documentation>Charge Disposition Response Document</xsd:documentation>
+		<xsd:appinfo>
+			<appinfo:ConformantIndicator>true</appinfo:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://release.niem.gov/niem/appinfo/4.0/" schemaLocation="../subset/niem/utility/appinfo/4.0/appinfo.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/niem-core/4.0/" schemaLocation="../subset/niem/niem-core/4.0/niem-core.xsd" />
+	<xsd:element name="ChargeDispositionResponseDocument" type="nc:StatusType">
+		<xsd:annotation>
+			<xsd:documentation>Root element for Response Document, StatusText can have 100 and Status Description Text as Success. Status
+				Text other than 100 leads to failure in Processing
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

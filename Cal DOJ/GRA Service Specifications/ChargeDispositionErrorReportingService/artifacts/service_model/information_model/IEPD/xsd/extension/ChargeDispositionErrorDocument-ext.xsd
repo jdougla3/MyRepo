@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/" xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/"
+	xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/" xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+	xmlns:cdec="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorCodes" xmlns:cded-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension"
+	targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension" elementFormDefault="qualified">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<appinfo:ConformantIndicator>true</appinfo:ConformantIndicator>
+		</xsd:appinfo>
+		<xsd:documentation>CA DRIP Charge Disposition Error Document Extension
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/" schemaLocation="../subset/niem/proxy/xsd/4.0/xs.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/structures/4.0/" schemaLocation="../subset/niem/utility/structures/4.0/structures.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/appinfo/4.0/" schemaLocation="../subset/niem/utility/appinfo/4.0/appinfo.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/niem-core/4.0/" schemaLocation="../subset/niem/niem-core/4.0/niem-core.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/domains/jxdm/6.0/" schemaLocation="../subset/niem/domains/jxdm/6.0/jxdm.xsd" />
+	<xsd:import namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorCodes" schemaLocation="./codes/error_codes.xsd" />
+	<xsd:complexType name="ChargeDispositionErrorDocumentType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the CA DRIP Disposition Document.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:DispositionType">
+				<xsd:sequence>
+					<xsd:element ref="cded-ext:ChargeDispositionError" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ChargeDispositionErrorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Citation.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="structures:ObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cded-ext:DispositionControlNumber" minOccurs="0" maxOccurs="1" />
+					<xsd:element ref="cded-ext:JudicialDistrictNumber" minOccurs="0" maxOccurs="1" />
+					<xsd:element ref="cded-ext:CourtFileNumber" minOccurs="0" maxOccurs="1" />
+					<xsd:element ref="cded-ext:DispositionIdentificationNumber" minOccurs="1" maxOccurs="1" />
+					<xsd:element ref="j:BookingAgency" />
+					<xsd:element ref="j:ArrestAgency" />
+					<xsd:element ref="cded-ext:ChargeDispositionSubject" minOccurs="1" maxOccurs="1" />
+					<xsd:element ref="cded-ext:DispositionError" minOccurs="1" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ChargeDispositionSubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the subject of the disposition.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:DispositionType">
+				<xsd:sequence>
+					<xsd:element ref="cded-ext:DispositionSubject" minOccurs="1" maxOccurs="1" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ErrorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the error.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="structures:ObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cded-ext:ErrorFieldName" minOccurs="1" maxOccurs="1" />
+					<xsd:element ref="cded-ext:ErrorContent" minOccurs="1" maxOccurs="1" />
+					<xsd:element ref="cded-ext:ValidationCheckDetail" minOccurs="1" maxOccurs="1" />
+					<xsd:element ref="cded-ext:ErrorMnemonic" minOccurs="0" maxOccurs="1" />
+					<xsd:element ref="cded-ext:DispositionErrorCode" minOccurs="1" maxOccurs="1" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ErrorCodeType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the error.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="structures:ObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cded-ext:AllStepErrors" minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="cded-ext:LawEnforcementErrors" minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="cded-ext:ProsecutionErrors" minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="cded-ext:CourtErrors" minOccurs="0" maxOccurs="unbounded" />
+					<xsd:element ref="cded-ext:SentenceErrors" minOccurs="0" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ChargeDispositionError" type="cded-ext:ChargeDispositionErrorType">
+		<xsd:annotation>
+			<xsd:documentation>a data type for a charge disposition error.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtFileNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A unique number for the file assigned by the court.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DispositionIdentificationNumber" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>An agency unique identifier for disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ChargeDispositionSubject" type="cded-ext:ChargeDispositionSubjectType">
+		<xsd:annotation>
+			<xsd:documentation>The subject of the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DispositionError" type="cded-ext:ErrorType">
+		<xsd:annotation>
+			<xsd:documentation>Data container for disposition error information</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DispositionErrorCode" type="cded-ext:ErrorCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Data container for disposition error codes</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DispositionSubject" type="j:SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>The subject of the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DispositionControlNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Need to confirm what the DCN actually is.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ErrorFieldName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the field that contains the error in the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ErrorContent" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The content provided in the disposition that caused the error.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ErrorMnemonic" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>three character error abbreviation used by CalDOJ.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ValidationCheckDetail" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Description of systematic check that generated the error.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JudicialDistrictNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A unique number for each judicial district.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AllStepErrors" type="cdec:AllStepErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that can occur throughout the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LawEnforcementErrors" type="cdec:Step1CodesCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that can occur throughout the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProsecutionErrors" type="cdec:Step2ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that can occur throughout the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtErrors" type="cdec:Step4ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that can occur throughout the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SentenceErrors" type="cdec:Step5ErrorsCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation>Errors that can occur throughout the disposition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

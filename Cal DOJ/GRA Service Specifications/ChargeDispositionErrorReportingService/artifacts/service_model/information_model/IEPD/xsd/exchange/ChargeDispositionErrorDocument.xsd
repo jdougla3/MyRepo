@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/" xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+	xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/"
+	xmlns:cded="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument" xmlns:cded-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension"
+	xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.0/" targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument"
+	version="1">
+	<xsd:annotation>
+		<xsd:documentation>Charge Disposition Error Document</xsd:documentation>
+		<xsd:appinfo>
+			<appinfo:ConformantIndicator>true</appinfo:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension"
+		schemaLocation="../extension/ChargeDispositionErrorDocument-ext.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/niem-core/4.0/" schemaLocation="../subset/niem/niem-core/4.0/niem-core.xsd" />
+	<xsd:import namespace="http://release.niem.gov/niem/domains/cbrn/4.0/" schemaLocation="../subset/niem/domains/cbrn/4.0/cbrn.xsd" />
+	<xsd:element name="ChargeDispositionErrorDocument">
+		<xsd:annotation>
+			<xsd:documentation>Root element for a disposition error document</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="cded-ext:ChargeDispositionErrorDocumentType">
+					<xsd:sequence>
+						<xsd:element ref="cbrn:MessageContentHeader" />
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<cded:ChargeDispositionErrorDocument xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:cded-ext="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension"
+	xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.0/"
+	xmlns:cded="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument" xmlns:appinfo="http://niem.gov/niem/appinfo/4.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument ../xsd/exchange/ChargeDispositionErrorDocument.xsd">
+	<cded-ext:ChargeDispositionError>
+		<cded-ext:DispositionIdentificationNumber>
+			<nc:IdentificationID>21313090598013044899999</nc:IdentificationID>
+		</cded-ext:DispositionIdentificationNumber>
+		<j:BookingAgency xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		<j:ArrestAgency xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		<cded-ext:ChargeDispositionSubject>
+			<cded-ext:DispositionSubject>
+				<nc:RoleOfPerson>
+					<nc:PersonName>
+						<nc:PersonGivenName>RUBBLE,WOODY BILLIE</nc:PersonGivenName>
+					</nc:PersonName>
+				</nc:RoleOfPerson>
+			</cded-ext:DispositionSubject>
+		</cded-ext:ChargeDispositionSubject>
+		<cded-ext:DispositionError>
+			<cded-ext:ErrorFieldName>DISPOSITION_ID_NUM</cded-ext:ErrorFieldName>
+			<cded-ext:ErrorContent>21313090598013044899999</cded-ext:ErrorContent>
+			<cded-ext:ValidationCheckDetail>DOJ is unable to parse the XML. Please correct and resubmit.
+      Error:DispositionIdentificationNumber longer than 20</cded-ext:ValidationCheckDetail>
+			<cded-ext:ErrorMnemonic></cded-ext:ErrorMnemonic>
+			<cded-ext:DispositionErrorCode>
+				<cded-ext:LawEnforcementErrors>100</cded-ext:LawEnforcementErrors>
+			</cded-ext:DispositionErrorCode>
+		</cded-ext:DispositionError>
+	</cded-ext:ChargeDispositionError>
+	<cbrn:MessageContentHeader>
+		<cbrn:MessageID>4l87c-p4f6-46k2-bl96-92a</cbrn:MessageID>
+		<cbrn:MessageOrigin>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>DOJ_1100000000"</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageOrigin>
+		<cbrn:MessageDestination>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>SJQ_1113900000"</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</cbrn:MessageDestination>
+		<cbrn:MessageCreationDateTime>2016-04-20T16:25:04.954-07:00</cbrn:MessageCreationDateTime>
+	</cbrn:MessageContentHeader>
+</cded:ChargeDispositionErrorDocument>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:cded="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument" xmlns:cderd="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorResponseDocument"
+	xmlns:cdereports="https://isb.srv.courts-tc.ca.gov/CADRIP/1.0/CDEReportS" targetNamespace="https://isb.srv.courts-tc.ca.gov/CADRIP/1.0/CDEReportS"
+	xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:ns="http://schemas.xmlsoap.org/soap/encoding/">
+	<wsdl:import namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/1.0/ws-policy" location="CADRIP_Policy.wsdl" />
+	<!-- Please use OASIS UserName Token policy 1.0 -->
+	<wsdl:types>
+		<xsd:schema>
+			<xsd:import namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument"
+				schemaLocation="../../artifacts/service_model/information_model/IEPD/xsd/exchange/ChargeDispositionErrorDocument.xsd" />
+			<xsd:import namespace="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorResponseDocument"
+				schemaLocation="../../artifacts/service_model/information_model/IEPD/xsd/exchange/ChargeDispositionErrorResponseDocument.xsd" />
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="ChargeDispositionErrorMessage">
+		<wsdl:part name="ChargeDispositionErrorDocument" element="cded:ChargeDispositionErrorDocument" />
+	</wsdl:message>
+	<wsdl:message name="ChargeDispositionErrorResponseMessage">
+		<wsdl:part name="ChargeDispositionErrorResponseDocument" element="cderd:ResponseDocument" />
+	</wsdl:message>
+	<wsdl:portType name="ChargeDispositionErrorReportingServiceInterface">
+		<wsdl:operation name="ReportChargeDispositionError">
+			<wsdl:input name="ChargeDispositionErrorMessage" message="cdereports:ChargeDispositionErrorMessage" />
+			<wsdl:output name="ChargeDispositionErrorResponseMessage" message="cdereports:ChargeDispositionErrorResponseMessage">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ChargeDispositionErrorReportingServiceSOAPBinding" type="cdereports:ChargeDispositionErrorReportingServiceInterface">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsaw:UsingAddressing wsdl:required="true" />
+		<wsp:PolicyReference URI="#wss-policy" />
+		<wsdl:operation name="ReportChargeDispositionError">
+			<soap:operation soapAction="https://isb.srv.courts-tc.ca.gov/CADRIP/1.0/CDEReportS/ReportChargeDispositionError"
+				style="document" />
+			<wsdl:input name="ChargeDispositionErrorMessage">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="ChargeDispositionErrorResponseMessage">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ChargeDispositionErrorReportingService">
+		<wsdl:port name="ChargeDispositionErrorReportingServicePort" binding="cdereports:ChargeDispositionErrorReportingServiceSOAPBinding">
+			<soap:address location="http://example/ChargeDispositionErrorReportingService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

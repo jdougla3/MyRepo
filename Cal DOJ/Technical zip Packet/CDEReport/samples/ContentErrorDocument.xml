@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns6:ChargeDispositionErrorDocument xmlns:ns1="http://release.niem.gov/niem/structures/3.0/"
+	xmlns:ns2="http://release.niem.gov/niem/niem-core/3.0/" xmlns:ns3="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocumentExtension"
+	xmlns:ns4="http://release.niem.gov/niem/domains/jxdm/5.0/" xmlns:ns5="http://release.niem.gov/niem/domains/cbrn/3.0/"
+	xmlns:ns6="https://isb.srv.courts-tc.ca.gov/CADRIP/ChargeDispositionErrorDocument" xmlns:ns7="http://niem.gov/niem/appinfo/2.0"
+	xmlns:ns8="http://niem.gov/niem/structures/2.0">
+	<ns3:ChargeDispositionError>
+		<ns3:DispositionControlNumber>L1098410981639000001</ns3:DispositionControlNumber>
+		<ns3:JudicialDistrictNumber>39451</ns3:JudicialDistrictNumber>
+		<ns3:CourtFileNumber>MF037523B</ns3:CourtFileNumber>
+		<ns3:DispositionIdentificationNumber>
+			<ns2:IdentificationID>CR2014151S372016</ns2:IdentificationID>
+		</ns3:DispositionIdentificationNumber>
+		<ns4:BookingAgency>
+			<ns2:OrganizationName>390000</ns2:OrganizationName>
+		</ns4:BookingAgency>
+		<ns4:ArrestAgency xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+		<ns3:ChargeDispositionSubject>
+			<ns3:DispositionSubject>
+			</ns3:DispositionSubject>
+		</ns3:ChargeDispositionSubject>
+		<ns3:RecordRapBackUserDefinedElement>
+			<ns3:UserDefinedElementName>State Fingerprint ID</ns3:UserDefinedElementName>
+			<ns3:UserDefinedElementText>A398118900</ns3:UserDefinedElementText>
+		</ns3:RecordRapBackUserDefinedElement>
+	</ns3:ChargeDispositionError>
+</ns6:ChargeDispositionErrorDocument>
