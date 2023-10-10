@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ebts:Type14UserDefinedFields xmlns:biom="http://niem.gov/niem/biometrics/1.0" xmlns:ebts="http://cjis.fbi.gov/fbi_ebts/10.0" xmlns:fbi="http://niem.gov/niem/fbi/2.0" xmlns:iso_3166="http://niem.gov/niem/iso_3166/2.0" xmlns:itl="http://biometrics.nist.gov/standard/2011" xmlns:j="http://niem.gov/niem/domains/jxdm/4.1" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cjis.fbi.gov/fbi_ebts/10.0 fbi_ebts.xsd ">
-  <ebts:ImageSourceCode>1</ebts:ImageSourceCode>
-</ebts:Type14UserDefinedFields>
